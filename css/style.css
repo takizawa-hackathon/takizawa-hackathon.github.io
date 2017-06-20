@@ -221,18 +221,26 @@ button:focus,
     padding : 0;
     height  : auto;
     margin  : 5px 0 !important;
-    }
+}
+
+.navbar-brand-svg {
+    background-image: url(../img/takizawa_hackathon_logo.svg);
+    background-size: 100%;
+    width: 233px;
+    height: 20px;
+    margin: 11px 0 0 0;
+}
 
 @media (max-width : 768px) {
     .navbar-brand {
         width : 200px;
-        }
-
-    .navbar-brand img {
-        max-width : 100%;
-        height    : auto;
-        }
     }
+    .navbar-brand-svg {
+        width: 186px;
+        height: 16px;
+        margin: 11px 0 0 0;
+    }
+}
 
 /*navbar*/
 
