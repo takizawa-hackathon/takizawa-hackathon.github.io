@@ -224,11 +224,10 @@ button:focus,
 }
 
 .navbar-brand-svg {
-    background-image: url(../img/takizawa_hackathon_logo.svg);
-    background-size: 100%;
     width: 233px;
     height: 20px;
     margin: 11px 0 0 0;
+    fill: #ecf0f1;
 }
 
 @media (max-width : 768px) {
@@ -340,6 +339,10 @@ button:focus,
 .sticky-nav .navbar-toggle .icon-bar{
     background: #333;
     }
+
+.sticky-nav .navbar-brand-svg {
+    fill: #00BADA;
+}
 
 @media (max-width: 768px) {
     .sticky-nav{
