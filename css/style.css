@@ -46,6 +46,10 @@ body {
     border      : 10px solid #fff;
     }
 
+.wf-notosansjapanese {
+  font-family: "Noto Sans Japanese";
+}
+
 /* --------------------------------------
  * Global Typography
  *------------------------------------------*/
@@ -227,7 +231,7 @@ button:focus,
     width: 233px;
     height: 20px;
     margin: 11px 0 0 0;
-    fill: #ecf0f1;
+    fill: #333333;
 }
 
 @media (max-width : 768px) {
@@ -279,7 +283,7 @@ button:focus,
     }
 
 .main-menu .nav li a {
-    color       : #ffffff;
+    color       : #333333;
     font-weight : 500;
     padding     : 15px 0 15px 30px;
     }
@@ -326,7 +330,7 @@ button:focus,
     z-index            : 999;
     background         : #ffffff !important;
     padding            : 5px 0;
-    box-shadow         : 0 2px 5px rgba(0, 0, 0, .1);
+    box-shadow         : 0 2px 5px rgba(0, 0, 0, 0);
     -webkit-transition : all .5s ease-in-out;
     -moz-transition    : all .5s ease-in-out;
     transition         : all .5s ease-in-out;
@@ -356,7 +360,8 @@ button:focus,
  *-------------------*/
 
 .jumbotron {
-    background            : url("../img/img-jumbotron-bg.jpg");
+    /*background            : url("../img/img-jumbotron-bg.jpg");*/
+    background-color      : white;
     background-size       : cover;
     padding               : 0;
     margin                : 0;
@@ -385,25 +390,32 @@ button:focus,
     -moz-transform    : translateY(-50%);
     }
 
-.jumbotron .content h1 {
-    color       : #ffffff;
+.jumbotron .content .typewriter {
+    color     : #333333;
+    font-size: 30px;
     font-weight : bold;
-    }
-
-.jumbotron .content p.lead {
-    font-size   : 24px;
-    line-height : 1.5em;
-    color       : rgba(255, 255, 255, .7);
     }
 
 .jumbotron .content .event-date {
     font-size     : 24px;
     margin-bottom : 40px;
+    color: #333333;
     }
 
 .jumbotron .btn {
+    background: #19b5c1;
+    background: linear-gradient(90deg,#19b5c1,#28c88c);
     margin-top : 40px;
+    border-color: transparent;
     }
+
+.jumbotron .btn:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.jumbotron .btn-shadow {
+    box-shadow: 0 2px 6px 0 rgba(25,181,193,.5);
+}
 
 @media (max-width : 600px) {
     .jumbotron .content {
@@ -730,9 +742,9 @@ button:focus,
     display     : block;
     }
 
-/* ---------------------------------------------- /*
- * Preloader
-/* ---------------------------------------------- */
+    /* ---------------------------------------------- /*
+     * Preloader
+    /* ---------------------------------------------- */
 #preloader {
     background : #ffffff;
     bottom     : 0;
@@ -763,3 +775,69 @@ button:focus,
     text-align : center;
     top        : 65%;
     }
+
+
+  /* ---------------------------------------------- /*
+   * TypeWriter
+  /* ---------------------------------------------- */
+
+  span.title-cursor {
+    font-size: 35px;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+  }
+
+  @media (max-width: 768px) {
+    .wrapper h1 {
+      font-size: 34px;
+    }
+    .wrapper h3 {
+      font-size: 28px;
+    }
+    .wrapper span {
+      font-size: 22px;
+    }
+    .wrapper .social {
+      text-align: center;
+    }
+    .wrapper .social i {
+      font-size: 22px;
+    }
+    .wrapper .social a {
+      margin: 5px;
+    }
+  }
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-moz-keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
