@@ -1,0 +1,96 @@
+/* --------------------------------------------- */
+/* ▼モバイルファースト iPhone5相当 (全環境に共通のデザイン) */
+/* --------------------------------------------- */
+
+
+/* --------------------------------------------- */
+/* ▼iPhone6相当 (やや高解像度スマホに共通のデザイン) */
+/* --------------------------------------------- */
+@media all and (min-width: 375px) {
+  .orig-jumbotron .content-one {
+    top: 40%;
+  }
+  .orig-jumbotron .content-two {
+    top: 76%;
+  }
+  .orig-jumbotron .content .typewriter {
+    font-size: 50px;
+  }
+  .orig-jumbotron .content .event-date {
+      width: 255px;
+      height: 24px;
+  }
+}
+
+/* --------------------------------------------- */
+/* ▼iPhone6plus相当 (高解像度スマホに共通のデザイン) */
+/* --------------------------------------------- */
+@media all and (min-width: 412px) {
+  .orig-jumbotron .content .typewriter {
+    font-size: 58px;
+  }
+}
+
+/* -------------------------------------------- */
+/* ▼タブレット用デザインとして付け足すデザイン */
+/* -------------------------------------------- */
+@media all and (min-width: 768px) {
+  .orig-jumbotron {
+    height: 70vh;
+    min-height: 500px;
+  }
+  .orig-jumbotron .content{
+    width: 750px;
+    padding: 0 25px;
+  }
+  .orig-jumbotron .content .event-date {
+    width: 335px;
+    height: 31px;
+  }
+  .orig-jumbotron .content-one {
+    top: 50%;
+  }
+  .orig-jumbotron .content-two {
+    top: 80%;
+  }
+}
+/* ------------------------------------ */
+/* ▼PC（小）用デザインとして付け足すデザイン */
+/* ------------------------------------ */
+@media all and (min-width: 920px) {
+  .orig-jumbotron {
+    height: 100vh;
+    min-height: 500px;
+  }
+  .orig-jumbotron .content{
+    width: 970px;
+  }
+  .orig-jumbotron .content-two {
+    top: 70%;
+  }
+}
+/* ------------------------------------ */
+/* ▼PC（大）用デザインとして付け足すデザイン */
+/* ------------------------------------ */
+@media all and (min-width: 1200px) {
+  .orig-jumbotron .content{
+    width: 1170px;
+    padding: 0;
+  }
+  .orig-jumbotron .content-two {
+    padding: 0 10px;
+  }
+  .orig-jumbotron .content-one {
+    top: 55%;
+  }
+  .orig-jumbotron .content-two {
+    top: 70%;
+  }
+  .orig-jumbotron .content .typewriter {
+    font-size: 70px;
+  }
+  .orig-jumbotron .content .event-date {
+    width: 369px;
+    height: 34px;
+  }
+}

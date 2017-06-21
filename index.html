@@ -7,8 +7,15 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>TakizawaHackathon // 滝沢市のハッカソンイベント</title>
 
+    <meta property="og:title" content="TakizawaHackathon // 滝沢市のハッカソンイベント" />
+    <meta property="og:description" content="TakizawaHackathonは岩手の学生が主役のハッカソンです。普段、作業を共にしない仲間とチームを組みものづくりすることで、新しいスキルや刺激を得るための機会として、2017/08/05（土）、08/06（日）の2日間、開催します。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://takizawa-hackathon.github.io/" />
+    <meta property="og:image" content="https://takizawa-hackathon.github.io/img/og_image.png" />
+    <meta property="og:site_name" content="TakizawaHackathon" />
+
     <!-- favicon -->
-    <link href="favicon.png" rel=icon>
+    <link href="img/favicon.ico" rel=icon>
 
     <!-- web-fonts -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,500' rel='stylesheet' type='text/css'>
@@ -22,6 +29,7 @@
 
     <!-- Style CSS -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/customize.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -92,12 +100,14 @@
 
     </header>
 
-    <div class="jumbotron">
-        <div class="content">
-            <div class="typewriter">
+    <div class="orig-jumbotron">
+          <div class="content content-one">
+            <div class="typewriter wf-notosansjapanese">
               <!-- <h1 class="jumbotron-catch-copy wf-notosansjapanese ">岩手の学生が集い<br>滝沢の課題に挑む２日間。</h1> -->
-              <span class="catch-copy wf-notosansjapanese">この週末で、&nbsp;</span><span class="input-catch-copy wf-notosansjapanese"></span><span class="title-cursor">|</span>
+              <span class="catch-copy">この週末で、</span><br class="br-sp"><span class="input-catch-copy"></span><span class="title-cursor">|</span>
             </div>
+          </div>
+          <div class="content content-two">
             <div class="event-date"></div>
             <nav class="event-share-nav">
               <ul class="nav">
@@ -107,7 +117,7 @@
               </ul>
             </nav>
             <a href="https://goo.gl/forms/xGV5PKBYI8zcPacq2" class="btn btn-default btn-shadow wf-notosansjapanese" target="_blank"><span>参戦する</span></a>
-        </div>
+          </div>
     </div>
     <!-- .Jumbotron-->
 
