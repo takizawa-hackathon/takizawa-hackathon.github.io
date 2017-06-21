@@ -399,7 +399,7 @@ button:focus,
 .jumbotron .content .event-date {
     width: 268px;
     height: 25px;
-    margin: 30px 0 10px 0;
+    margin: 20px 0 10px 0;
     background-image:url(../img/event-date.svg);
     background-size:100%;
     }
@@ -438,6 +438,22 @@ button:focus,
 
 .jumbotron .input-catch-copy {
   font-weight: 900;
+}
+
+.event-share-nav {
+  margin-top: 10px;
+}
+
+.jumbotron .event-share-nav ul {
+  width: 600px;
+  padding:0;
+  font-size:0px;
+}
+
+.jumbotron .event-share-nav li {
+  display: inline-block;
+  text-align: center;
+  padding: 0 1.5px;
 }
 
 @media (max-width : 600px) {
