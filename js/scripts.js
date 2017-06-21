@@ -112,7 +112,7 @@ jQuery(function ($) {
     			'ワクワクを生み出す;',
     			'新しいものをつくる;',
           '滝沢をデザインする;',
-    			'夢を見る;'
+    			'仲間を見つける;'
     		],
     		counterS: 0,
     		counterL: 0,
@@ -124,7 +124,7 @@ jQuery(function ($) {
     		},
 
     		cacheElem: function() {
-    			this.$text = $('.title-catch-copy');
+    			this.$text = $('.input-catch-copy');
     		},
 
     		type: function() {
@@ -139,7 +139,7 @@ jQuery(function ($) {
     			}
     			else {
     				this.deleteS = true;
-    				speed = this.message[this.counterS] == message ? 1000 : 40;
+    				speed = this.message[this.counterS] == message ? 1500 : 40;
     				this.$text.text(message);
     				if (message == '') {
     					this.deleteS = false;

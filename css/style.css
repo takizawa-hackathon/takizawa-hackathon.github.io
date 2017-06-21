@@ -176,8 +176,8 @@ ul {
 .btn-default:focus,
 .btn-default:active:focus {
     background-color : transparent;
-    color            : #00BAD9;
-    border-color     : #00BAD9;
+    color            : #FFF;
+    border-color: transparent;
     }
 
 button:focus,
@@ -384,7 +384,7 @@ button:focus,
     height            : 30%;
     width             : 100%;
     margin            : 0 auto;
-    padding           : 0 10%;
+    padding           : 0 20%;
     transform         : translateY(-50%);
     -webkit-transform : translateY(-50%);
     -moz-transform    : translateY(-50%);
@@ -393,13 +393,15 @@ button:focus,
 .jumbotron .content .typewriter {
     color     : #333333;
     font-size: 30px;
-    font-weight : bold;
+    /*font-weight : bold;*/
     }
 
 .jumbotron .content .event-date {
-    font-size     : 24px;
-    margin-bottom : 40px;
-    color: #333333;
+    width: 268px;
+    height: 25px;
+    margin: 30px 0 10px 0;
+    background-image:url(../img/event-date.svg);
+    background-size:100%;
     }
 
 .jumbotron .btn {
@@ -407,14 +409,35 @@ button:focus,
     background: linear-gradient(90deg,#19b5c1,#28c88c);
     margin-top : 40px;
     border-color: transparent;
-    }
+    border-radius: 4px;
+    transition: all .15s ease-in-out;
+}
 
 .jumbotron .btn:hover {
-  color: rgba(255, 255, 255, 0.9);
+  -ms-transform: translateY(-2px);
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+  box-shadow: 0 2px 6px 0 rgba(25,181,193,.5);
 }
 
 .jumbotron .btn-shadow {
     box-shadow: 0 2px 6px 0 rgba(25,181,193,.5);
+}
+
+.jumbotron .btn-shadow:hover {
+    box-shadow: 1px 3px 7px 0 rgba(25,181,193,.5);
+}
+
+.jumbotron span {
+  text-decoration: none;
+}
+
+.jumbotron .catch-copy {
+  font-weight: 900;
+}
+
+.jumbotron .input-catch-copy {
+  font-weight: 900;
 }
 
 @media (max-width : 600px) {
