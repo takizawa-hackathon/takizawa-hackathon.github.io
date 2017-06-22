@@ -151,5 +151,4 @@ jQuery(function ($) {
     	};
     	message.init();
     });
-
 }); // JQuery end
