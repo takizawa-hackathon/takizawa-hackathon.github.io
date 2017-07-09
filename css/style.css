@@ -800,6 +800,10 @@ button:focus,
    margin-bottom: 10px;
 }
 
+.countdown-section p {
+  text-align: center;
+}
+
  ul#countdown {
    position: relative;
    top: 50%;
@@ -819,8 +823,7 @@ button:focus,
    padding: 0;
    display: inline-block;
    width: 25%;
-   font-size: 72px;
-   font-size: 6vw;
+   font-size: 5vw;
    text-align: center;
  }
  ul#countdown li .label {
@@ -985,4 +988,12 @@ button:focus,
     margin: 100px auto 0 auto;
     padding: 20px 0 20px 0;
   }
+}
+
+/* ---------------------------------------------- /*
+ * リンク無効化
+/* ---------------------------------------------- */
+
+.target-event-none {
+  pointer-events: none;
 }
