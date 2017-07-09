@@ -761,6 +761,11 @@ button:focus,
  * エントリー
  * ------------------*/
 
+.entry-section-title p {
+  font-family: "Noto Sans Japanese";
+  font-size: 0.9em;
+}
+
 .entry-btn {
   /*margin: 0 auto;*/
   width: 128px;
@@ -790,6 +795,41 @@ button:focus,
  .entry-btn .btn-shadow:hover {
      box-shadow: 1px 3px 7px 0 rgba(25,181,193,.5);
  }
+
+.countdown-section {
+   margin-bottom: 10px;
+}
+
+ ul#countdown {
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 50%;
+   margin: 159px auto 0 auto;
+   padding: 50px 0 20px 0;
+   color: #333333;
+   border: 1px solid #adafb2;
+   border-width: 1px 0;
+   overflow: hidden;
+   font-family: "Noto Sans Japanese";
+   font-weight: bold;
+ }
+ ul#countdown li {
+   margin: 0 -3px 0 0;
+   padding: 0;
+   display: inline-block;
+   width: 25%;
+   font-size: 72px;
+   font-size: 6vw;
+   text-align: center;
+ }
+ ul#countdown li .label {
+   color: #adafb2;
+   font-size: 18px;
+   text-transform: uppercase;
+   font-weight: normal;
+ }
+
 
 /* ---------------------------
  * これまで
@@ -938,5 +978,11 @@ button:focus,
 
   body h1 {
     font-size: 28px;
+  }
+
+  ul#countdown {
+    width: 70%;
+    margin: 100px auto 0 auto;
+    padding: 20px 0 20px 0;
   }
 }
