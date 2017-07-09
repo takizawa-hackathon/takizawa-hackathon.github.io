@@ -705,20 +705,38 @@ button:focus,
 /* --------------------------
  * スポンサー
  *---------------------------*/
+.sponsor-section {
+  margin-top: 50px;
+}
+
 .sponsor-img {
   margin: 0 auto;
   width: 250px;
   height: auto;
 }
 
-.sponsor-img a {
-
-}
-
 .sponsor-img a img {
   width: 250px;
   height: auto;
-  margin: 30px 0;
+  margin: 0 0 10px 0;
+}
+
+.sponsor-category {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sponsor-category h2 {
+  font-weight: 400;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.sponsor-category p {
+  font-weight: 200;
+  font-size: 0.9em;
+  margin: 0;
 }
 
 /* --------------------------
@@ -809,9 +827,9 @@ button:focus,
     display     : block;
     }
 
-    /* ---------------------------------------------- /*
-     * Preloader
-    /* ---------------------------------------------- */
+/* ---------------------------------------------- /*
+ * Preloader
+/* ---------------------------------------------- */
 #preloader {
     background : #ffffff;
     bottom     : 0;
