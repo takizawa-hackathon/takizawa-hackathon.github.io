@@ -37,7 +37,7 @@ Author: uiCookies.com
 # -------------------------------------------------------------------*/
 
 body {
-    font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+    font-family:　"Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
     font-size   : 17px;
     line-height : 1.7em;
     color       : #353e55;
@@ -194,7 +194,7 @@ button:focus,
  * -------------------*/
 
 .gray-bg {
-    background-color : #f0f1f3;
+    background-color : #F9F9F9;
     border-top       : 1px solid #eeeeee;
     border-bottom    : 1px solid #eeeeee;
     }
@@ -300,6 +300,14 @@ button:focus,
 .main-menu .nav li a:focus {
     background : transparent;
     }
+
+.main-menu .nav .entry-btn {
+  margin: 2.5px 0 2.5px 20px;
+  padding: 10px 20px;
+  border: solid 2px #00BAD9;
+  border-radius: 25px;
+}
+
 
 @media (max-width : 991px) {
     .main-menu .nav li a {
@@ -502,8 +510,9 @@ button:focus,
     }
 
 .about-event address {
-    font-size   : 15px;
-    color       : #888888;
+    font-size   : 0.9em;
+    font-family: "Noto Sans Japanese";
+    font-weight: 400;
     line-height : 1.8em;
     }
 
@@ -581,31 +590,43 @@ button:focus,
  *---------------------------*/
 .section-ajenda .session {
     padding       : 15px 0;
-    border-left   : 1px solid #eeeeee;
+    border-left   : 1px solid #EAEAEA;
     margin-bottom : 40px;
     }
 
 .section-ajenda .session time {
     padding       : 5px 25px 15px;
-    border-bottom : 1px solid #eeeeee;
+    border-bottom : 1px solid #EAEAEA;
     display       : inline-block;
+    font-family: "Helvetica Neue";
+    font-weight: bold;
     }
 
 .section-ajenda .session h2 {
     margin : 20px 0 0 20px;
+    font-size: 1.1em;
     }
 
 .section-ajenda .session h3 {
-    margin         : 20px 0 20px 20px;
-    font-size      : 20px;
-    text-transform : uppercase;
-    }
+    margin         : 15px 0 20px 20px;
+    font-size      : 0.9em;
+}
 
 .section-ajenda .session h3 span {
-    font-size   : 14px;
+    font-size   : 15px;
     display     : block;
     line-height : 1;
-    }
+    padding-top: 10px;
+}
+
+.section-day-wrap {
+  margin: 10px 0 40px 0;
+}
+
+.section-day-title h2 span{
+  font-size: 1.1em;
+  font-weight: 600;
+}
 
 /* --------------------------
  * Pricing Table
@@ -703,14 +724,38 @@ button:focus,
     }
 
 /* ------------------
- * Google Map
+ * エントリー
  * ------------------*/
 
-#googleMap {
-    height        : 320px;
-    border        : 5px solid #ffffff;
-    margin-bottom : 100px;
-    }
+.entry-btn {
+  /*margin: 0 auto;*/
+  width: 128px;
+}
+
+ .entry-btn .btn {
+     background: #19b5c1;
+     background: linear-gradient(90deg,#19b5c1,#28c88c);
+     margin-top : 40px;
+     border-color: transparent;
+     border-radius: 4px;
+     transition: all .15s ease-in-out;
+     text-align:center;
+ }
+
+ .entry-btn .btn:hover {
+   -ms-transform: translateY(-2px);
+   -webkit-transform: translateY(-2px);
+   transform: translateY(-2px);
+   box-shadow: 0 2px 6px 0 rgba(25,181,193,.5);
+ }
+
+ .entry-btn .btn-shadow {
+     box-shadow: 0 2px 6px 0 rgba(25,181,193,.5);
+ }
+
+ .entry-btn .btn-shadow:hover {
+     box-shadow: 1px 3px 7px 0 rgba(25,181,193,.5);
+ }
 
 /* ---------------------------
  * Subscribe Form
