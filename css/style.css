@@ -707,7 +707,7 @@ button:focus,
  *---------------------------*/
 .sponsor-img {
   margin: 0 auto;
-  width: 200px;
+  width: 250px;
   height: auto;
 }
 
@@ -716,7 +716,7 @@ button:focus,
 }
 
 .sponsor-img a img {
-  width: 200px;
+  width: 250px;
   height: auto;
   margin: 30px 0;
 }
