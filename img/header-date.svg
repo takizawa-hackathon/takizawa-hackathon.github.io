@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1338px" height="128px" viewBox="0 0 1338 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>日付</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="日付" transform="translate(-4.000000, -64.000000)" fill="#484848">
+            <text id="2017.08.05--06" font-family="NotoSansCJKjp-Black, Noto Sans CJK JP" font-size="120" font-weight="700">
+                <tspan x="0" y="139">2017.</tspan>
+                <tspan x="334.44" y="139" font-size="160">08.05</tspan>
+                <tspan x="780.36" y="139" font-size="100">       </tspan>
+                <tspan x="940.66" y="139" font-size="160">-06</tspan>
+            </text>
+            <text id="(日)" font-family="NotoSansCJKjp-Bold, Noto Sans CJK JP" font-size="80" font-weight="bold">
+                <tspan x="1208" y="174">(日)</tspan>
+            </text>
+            <text id="(土)" font-family="NotoSansCJKjp-Bold, Noto Sans CJK JP" font-size="80" font-weight="bold">
+                <tspan x="787" y="175">(土)</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
