@@ -701,27 +701,21 @@ button:focus,
     }
 
 /* --------------------------
- * Client Logo
+ * チーム
  *---------------------------*/
 
-.client-logo a img {
-    width              : 100%;
-    opacity            : 1;
-    -webkit-transition : all 0.8s ease 0s;
-    -moz-transition    : all 0.8s ease 0s;
-    -o-transition      : all 0.8s ease 0s;
-    transition         : all 0.8s ease 0s;
-    }
+ .member-img {
+   width: 100px;
+   height: 100px;
+   margin: 0 auto;
+ }
 
-.client-logo a:hover img {
-    opacity : .5;
-    }
+ .member-img a img {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+ }
 
-@media (max-width : 992px) {
-    .client-logo .section-margin {
-        margin-bottom : 30px;
-        }
-    }
 
 /* ------------------
  * エントリー
@@ -758,55 +752,22 @@ button:focus,
  }
 
 /* ---------------------------
- * Subscribe Form
+ * これまで
  * --------------------------- */
 
-.subscribe-form {
-    text-align : center;
-    }
+.locus-wrap {
+}
 
+.locus-img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
 
-
-/*-------------------
- * Form Style
- *-------------------*/
-
-.form-control {
-    height        : 46px;
-    padding       : 0 20px;
-    font-size     : 14px;
-    line-height   : 46px;
-    color         : #969595;
-    border        : 1px solid #f1f1f1;
-    border-radius : 0;
-    box-shadow    : none;
-    }
-
-.form-control.input-lg {
-    height        : 60px;
-    padding       : 0 20px;
-    font-size     : 18px;
-    line-height   : 60px;
-    color         : #969595;
-    border        : 1px solid #f1f1f1;
-    border-radius : 0;
-    box-shadow    : none;
-    min-width     : 400px;
-    }
-
-.form-control:focus,
-.form-control:active {
-    box-shadow   : none;
-    border-color : #00BAD9;
-    }
-
-
-@media (max-width : 600px) {
-    .form-control.input-lg{
-        min-width: auto;
-        display: block;
-        }
-    }
+.locus-wrap a img {
+  width: 100px;
+  height: 100px;
+}
 
 /* --------------------------------------------
  *   Footer
