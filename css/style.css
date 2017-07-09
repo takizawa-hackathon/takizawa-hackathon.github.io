@@ -463,6 +463,7 @@ button:focus,
 
 .event-share-nav {
   margin-top: 10px;
+  line-height : 0;
 }
 
 .orig-jumbotron .event-share-nav ul {
@@ -700,6 +701,26 @@ button:focus,
     position : relative;
     }
 
+
+/* --------------------------
+ * スポンサー
+ *---------------------------*/
+.sponsor-img {
+  margin: 0 auto;
+  width: 200px;
+  height: auto;
+}
+
+.sponsor-img a {
+
+}
+
+.sponsor-img a img {
+  width: 200px;
+  height: auto;
+  margin: 30px 0;
+}
+
 /* --------------------------
  * チーム
  *---------------------------*/
@@ -714,6 +735,7 @@ button:focus,
    width: 100px;
    height: 100px;
    border-radius: 50%;
+   margin: 30px 0;
  }
 
 
@@ -767,6 +789,7 @@ button:focus,
 .locus-wrap a img {
   width: 100px;
   height: 100px;
+  margin: 30px 0;
 }
 
 /* --------------------------------------------
@@ -893,5 +916,9 @@ button:focus,
 @media (max-width: 700px) {
   .mcs-chatLayout{
     display: none;
+  }
+
+  body h1 {
+    font-size: 28px;
   }
 }
