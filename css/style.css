@@ -616,7 +616,7 @@ button:focus,
 .section-ajenda .session h3 span {
     font-size   : 15px;
     display     : block;
-    line-height : 1;
+    line-height : 1.5;
     padding-top: 10px;
 }
 
