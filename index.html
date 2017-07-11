@@ -18,18 +18,21 @@
     <link href="img/favicon.ico" rel=icon>
 
     <!-- web-fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,500' rel='stylesheet' type='text/css' />
     <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
 
+    <!-- FontAwesome-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- ChatSupport -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.mlkcca.com/chatsupport.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.mlkcca.com/chatsupport.min.css" />
 
     <!-- Style CSS -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/customize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/customize.css" rel="stylesheet" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -146,8 +149,11 @@
                     <address>
                         <strong>TakizawaHackathon ver.3</strong><br>
                         日時：2017/08/05-06<br>
-                        場所：滝沢市IPUイノベーションセンター<br>
-                        　　　滝沢市岩手県滝沢市巣子152-409<br>
+                        場所：滝沢市IPU第2イノベーションセンター<br>
+                        <div class="google-map-button">
+                          <a class="google-map-link" href="https://goo.gl/maps/kcLkeXvPHWw"><i class="fa fa-map-marker" aria-hidden="true"></i>Google Map</a>
+                        </div
+                        <br>
                         参加資格：岩手県内の学生
                         <br><br>
                         <strong>エントリー締め切り：<br>2017年07月30日(日) 23:59 UTC+09</strong>
@@ -226,7 +232,7 @@
                     <div class="session">
                         <time>6:30PM - 7:30PM</time>
                         <h2>立食パーティー</h2>
-                        <h3>リフレッシュの機会としてパーティーの時間をご用意しました。また、<a href="http://www.oz-vision.co.jp/" target="_blank">オズビジョン社</a>※で実際に働いている現役エンジニアの方々とざっくばらんに談話できます！<span>※ Webサービスを複数展開している東京のITベンチャー企業。</span></h3>
+                        <h3>リフレッシュの機会としてパーティーの時間をご用意しました。また、<a href="http://www.oz-vision.co.jp/" target="_blank">オズビジョン社</a>※で実際に働いている現役エンジニアの方々とざっくばらんに談話することが可能です！<span>※ Webサービスを複数展開している東京のITベンチャー企業。</span></h3>
                     </div>
                     <!-- .session -->
                     <div class="session">
@@ -319,16 +325,9 @@
                   </div>
               </div>
               <div class="row platinum-sponsor">
-                  <div class="col-sm-6 col-md-3 col-md-offset-3">
+                  <div class="col-sm-12 col-md-12">
                     <div class="sponsor-img">
                       <a href="http://www.oz-vision.co.jp/"><img src="img/ozvision.png" class="img-responsive" alt="Image"></a>
-                    </div>
-                  </div>
-                  <!-- /.col-sm-6 -->
-
-                  <div class="col-sm-6 col-md-3">
-                    <div class="sponsor-img">
-                      <a href="http://www.city.takizawa.iwate.jp/index.html"><img src="img/takizawashi.png" class="img-responsive" alt="Image"></a>
                     </div>
                   </div>
                   <!-- /.col-sm-6 -->
@@ -448,6 +447,27 @@
         <!--end of .container -->
     </section>
     <!-- .client-logo -->
+
+    <section id="section-hall" class="section-wrapper section-hall">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h1>会場提供</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                  <a href="https://goo.gl/maps/kcLkeXvPHWw"><p class="section-hall-place"><i class="fa fa-map-marker" aria-hidden="true"></i>滝沢市IPU第2イノベーションセンター</p></a>
+                  <div class="sponsor-img">
+                    <a href="http://www.city.takizawa.iwate.jp/index.html"><img src="img/takizawashi.png" class="img-responsive" alt="Image"></a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
     <section id="section-team" class="section-wrapper team gray-bg">
@@ -600,7 +620,6 @@
 
 <!-- particles-js -->
 <script src="js/particles.min.js"></script>
-<script src="js/particle.js"></script>
 
 <!-- countdown.js -->
 <script src="js/countdown.js"></script>
