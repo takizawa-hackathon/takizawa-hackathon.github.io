@@ -37,7 +37,7 @@ Author: uiCookies.com
 # -------------------------------------------------------------------*/
 
 body {
-    font-family:　"Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Noto Sans Japanese", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, Meiryo, sans-serif;
     font-size   : 17px;
     line-height : 1.7em;
     color       : #353e55;
@@ -519,7 +519,21 @@ button:focus,
 
 .about-event address strong {
     color : #353e55;
-    }
+}
+
+.about-event .google-map-button {
+  margin: 5px 0;
+}
+
+.about-event address i {
+  margin: 0 7px 0 0;
+}
+
+.about-event .google-map-link {
+  margin: 0 0 0 45px;
+  padding: 3px 7px;
+  border: 1px solid rgba(53, 62, 85, 0.1);
+}
 
 /* ----------------------------------------------
  * Team Section
@@ -737,6 +751,24 @@ button:focus,
   font-weight: 200;
   font-size: 0.9em;
   margin: 0;
+}
+
+/* --------------------------
+ * 会場提供
+ *---------------------------*/
+.section-hall .section-title {
+  margin-bottom: 35px;
+}
+
+.section-hall-place {
+  font-size: 0.95em;
+  text-align: center;
+  color: #353E55;
+}
+
+.section-hall-place i {
+  margin: 0 7px 0 0;
+  font-size: 1.15em;
 }
 
 /* --------------------------
