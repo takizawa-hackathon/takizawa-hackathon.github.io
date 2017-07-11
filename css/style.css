@@ -756,6 +756,11 @@ button:focus,
 /* --------------------------
  * 会場提供
  *---------------------------*/
+
+.section-hall {
+  border-top: 1px solid #eeeeee;
+}
+
 .section-hall .section-title {
   margin-bottom: 35px;
 }
