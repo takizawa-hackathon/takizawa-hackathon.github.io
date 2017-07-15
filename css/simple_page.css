@@ -5,6 +5,10 @@
   font-weight: 400;
 }
 
+.simple-page-wrapper {
+  width: 100%;
+}
+
 /*simple list*/
 .simple-list {
   margin: 50px 0 0 0;
@@ -154,7 +158,7 @@
 }
 
 /* history */
-/* Styling */
+
 .timeline {
   margin: 4em auto;
   position: relative;
@@ -246,8 +250,8 @@ p.timeline-event-thumbnail {
   letter-spacing: 2px;
 }
 
-.time-line-info-list {
-
+.time-line-info-list a {
+  font-weight: 200;
 }
 
 .time-line-info-list ul li {
@@ -280,37 +284,108 @@ p.timeline-event-thumbnail {
 /* ▼iPhone6相当 (やや高解像度スマホに共通のデザイン) */
 /* --------------------------------------------- */
 @media all and (min-width: 375px) {
-  .orig-jumbotron {
 
-  }
 }
 
 /* --------------------------------------------- */
 /* ▼iPhone6plus相当 (高解像度スマホに共通のデザイン) */
 /* --------------------------------------------- */
 @media all and (min-width: 412px) {
+  .orig-jumbotron {
+    height: 50vh;
+    min-height: 400px;
+  }
 
+  .page-title-h1 {
+    margin-top: 130px;
+  }
+
+  .simple-page p {
+    margin: 60px 0 0 0;
+    font-size: 1em;
+  }
+
+  .section-we-believe ol li {
+    padding: 0 2rem;
+  }
+
+  .section-we-believe ol li p {
+    margin-bottom: 5px;
+  }
+
+  .simple-list ul {
+    font-size: 1em;
+  }
+
+  .nested-simple-list ul li {
+    font-size: 0.9em;
+  }
+
+  .time-line-info-list ul li {
+    font-size: 0.9em;
+  }
+
+  .section-to-company a {
+    margin: 50px 2rem 0 2rem;
+  }
 }
 
 /* -------------------------------------------- */
 /* ▼タブレット用デザインとして付け足すデザイン */
 /* -------------------------------------------- */
 @media all and (min-width: 768px) {
-  .orig-jumbotron {
+  .simple-page-main-section {
+    width: 80%;
+    margin: 0 auto;
+  }
 
+  .simple-page-main-section section {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .orig-jumbotron {
+    height: 60vh;
+    min-height: 500px;
+  }
+
+  .page-title-h1 {
+    margin-top: 200px;
+    font-size: 2em;
+  }
+
+  .page-title-h2 {
+    font-size: 1.1em;
+  }
+
+  .simple-page p {
+    margin: 60px 0 0 0;
   }
 }
 /* ------------------------------------ */
 /* ▼PC（小）用デザインとして付け足すデザイン */
 /* ------------------------------------ */
 @media all and (min-width: 920px) {
-  .orig-jumbotron {
-
+  .simple-page-main-section {
+    width: 70%;
   }
 }
 /* ------------------------------------ */
 /* ▼PC（大）用デザインとして付け足すデザイン */
 /* ------------------------------------ */
 @media all and (min-width: 1200px) {
-
+  .simple-page-main-section {
+    width: 50%;
+  }
+  .first-message {
+    margin-top: 50px;
+  }
+}
+/* ------------------------------------ */
+/* ▼PC（フルHD）用デザインとして付け足すデザイン */
+/* ------------------------------------ */
+@media all and (min-width: 1800px) {
+  .simple-page-main-section {
+    width: 40%;
+  }
 }
