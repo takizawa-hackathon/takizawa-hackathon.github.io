@@ -189,6 +189,30 @@ button:focus,
     outline : none;
     }
 
+.blue-btn {
+  background: #19b5c1;
+  background: linear-gradient(90deg, #19b5c1, #28c88c);
+  margin-top: 40px;
+  border-color: transparent;
+  border-radius: 4px;
+  transition: all .15s ease-in-out;
+}
+
+.blue-btn:hover {
+  -ms-transform: translateY(-2px);
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+  box-shadow: 0 2px 6px 0 rgba(25, 181, 193, .5);
+}
+
+.blue-btn-shadow {
+  box-shadow: 0 2px 6px 0 rgba(25, 181, 193, .5);
+}
+
+.blue-btn-shadow:hover {
+  box-shadow: 1px 3px 7px 0 rgba(25, 181, 193, .5);
+}
+
 /* --------------------
  * Section Background
  * -------------------*/
