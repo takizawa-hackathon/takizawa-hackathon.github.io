@@ -1,6 +1,10 @@
 /* --------------------------------------------- */
 /* ▼モバイルファースト iPhone5相当 (全環境に共通のデザイン) */
 /* --------------------------------------------- */
+#preloader {
+  display: none;
+}
+
 .background-particles canvas{
   display: inline-flex;
 }

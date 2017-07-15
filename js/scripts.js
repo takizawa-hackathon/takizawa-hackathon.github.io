@@ -1,4 +1,4 @@
-jQuery(function ($) {
+$(function() {
 
     'use strict';
 
@@ -7,7 +7,7 @@ jQuery(function ($) {
     // --------------------------------------------------------------------
 
     (function () {
-        $('#preloader').delay(200).fadeOut('slow');
+        $('#preloader').delay(500).fadeOut('slow');
     }());
 
     // --------------------------------------------------------------------
@@ -54,9 +54,9 @@ jQuery(function ($) {
     // --------------------------------------------------------------------
     // particale.js
     // --------------------------------------------------------------------
-
     particlesJS.load('background-particles', 'js/particles.json', function() {
       // customize file -> particles.json
+      console.log('particle.js loaded!');
     });
 
     // --------------------------------------------------------------------

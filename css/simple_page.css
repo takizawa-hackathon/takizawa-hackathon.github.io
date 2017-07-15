@@ -1,0 +1,391 @@
+/* --------------------------------------------- */
+/* ▼モバイルファースト iPhone5相当 (全環境に共通のデザイン) */
+/* --------------------------------------------- */
+.simple-page {
+  font-weight: 400;
+}
+
+.simple-page-wrapper {
+  width: 100%;
+}
+
+/*simple list*/
+.simple-list {
+  margin: 50px 0 0 0;
+  padding: 0 2rem;
+}
+
+.simple-list ul {
+	list-style-type: none;
+	margin: 0 0 0 10px;
+  font-size: 0.85em;
+}
+
+.simple-list ul li:before {
+	content: '-';
+	margin: 0 7px 0px -10px;
+}
+
+.simple-list ul li {
+  line-height: 1.7em;
+  margin: 0 0 15px 0;
+}
+
+.nested-simple-list ul li {
+  font-size: 1.1em;
+}
+
+/*top*/
+
+.orig-jumbotron {
+  height: 40vh;
+  min-height: 300px;
+  border-bottom    : 1px solid #eeeeee;
+}
+.orig-jumbotron .content {
+  text-align: center;
+  font-family: "Noto Sans Japanese";
+  font-weight: 200;
+}
+
+.page-title-h1 {
+  margin-top: 97px;
+  letter-spacing: 4px;
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+
+.page-title-h2 {
+  font-size: 0.8em;
+  color: #919191;
+}
+
+.simple-page-wrapper {
+  padding: 0 1rem;
+}
+
+.simple-page p {
+  margin: 50px 0 0 0;
+  padding: 0 2rem;
+  font-size: 0.85em;
+}
+
+/* our message */
+
+.simple-page h3 {
+  margin: 70px 0 0 0;
+  padding: 0 2rem;
+  font-weight: 700;
+  font-size: 1.8em;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+.simple-page .sub-title {
+  margin: 8px 0 0 0;
+  font-size: 0.8em;
+  color: #919191;
+}
+
+/* our mission */
+
+
+
+/* what we believe */
+.section-we-believe ol {
+  counter-reset: item;
+  list-style-type: none;
+  padding: 0 2rem;
+}
+
+.section-we-believe ol li {
+  display: block;
+}
+
+.section-we-believe ol li:before {
+  content: counter(item)".";
+  counter-increment: item;
+}
+
+.section-we-believe ol li {
+  font: 18px Open Sans, sans-serif;
+  line-height: 28px;
+  color: #000;
+  position: relative;
+}
+
+.section-we-believe ol li:before {
+  position: absolute;
+  margin: -2px 0 0 -35px;
+  font: bold italic 22px/1.5 Helvetica, Verdana, sans-serif;
+  color: #ccc;
+}
+
+.section-we-believe li span {
+  font: 14px Open Sans, sans-serif;
+  color: #555;
+}
+
+.section-we-believe {
+  text-align: justify;
+  margin-top: 50px;
+}
+
+.section-we-believe ol li {
+  text-indent: 0 !important;
+  padding-left: 22px !important;
+  list-style-position: outside;
+  padding-bottom: 30px;
+  font-family: "Noto Sans Japanese";
+  font-weight: 500;
+}
+
+.section-we-believe ol li span {
+  font-family: "Noto Sans Japanese";
+  font-weight: 300;
+  color: #919191;
+}
+
+.section-we-believe ol {
+  margin-left: 10px;
+}
+
+.section-we-believe p {
+  margin: 0 0 8px 0;
+  padding: 0;
+  font-size: 0.95em;
+}
+
+/* history */
+
+.timeline {
+  margin: 4em auto;
+  position: relative;
+  max-width: 46em;
+}
+.timeline:before {
+  background-color: black;
+  content: '';
+  margin-left: -1px;
+  position: absolute;
+  top: 0;
+  left: 2em;
+  width: 2px;
+  height: 100%;
+}
+
+.timeline-event {
+  position: relative;
+}
+.timeline-event:hover .timeline-event-thumbnail {
+  -moz-box-shadow: inset 40em 0 0 0 #292929;
+  -webkit-box-shadow: inset 40em 0 0 0 #292929;
+  box-shadow: inset 40em 0 0 0 #292929;
+}
+
+.timeline-event-copy {
+  padding: 1em;
+  position: relative;
+  top: -1.875em;
+  left: 4em;
+  width: 80%;
+}
+.timeline-event-copy h3 {
+  font-size: 1.4em;
+  padding: 0;
+  margin: 30px 0 0 0;
+  text-transform: none;
+  width: 100%;
+  word-break: break-all;
+  word-wrap: break-word;
+  display: inline-block;
+}
+.timeline-event-copy h4 {
+  font-size: 0.9em;
+  margin-top: 15px;
+  margin-bottom: 1.2em;
+  color: #919191;
+}
+.timeline-event-copy p.time-line-event-comment {
+  padding: 0;
+  margin: 0;
+  color: #0e1555;
+}
+.timeline-event-copy strong {
+  font-weight: 700;
+}
+.timeline-event-copy p:not(.timeline-event-thumbnail) {
+  padding-bottom: 1.2em;
+}
+
+.timeline-event-icon {
+  background-color: black;
+  outline: 10px solid white;
+  display: block;
+  margin: 0.3em 0.3em 0.3em -0.3em;
+  position: absolute;
+  top: 0;
+  left: 1.79em;
+  width: 1em;
+  height: 1em;
+}
+
+p.timeline-event-thumbnail {
+  -moz-transition: box-shadow 0.5s ease-in 0.1s;
+  -o-transition: box-shadow 0.5s ease-in 0.1s;
+  -webkit-transition: box-shadow 0.5s ease-in;
+  -webkit-transition-delay: 0.1s;
+  transition: box-shadow 0.5s ease-in 0.1s;
+  color: white;
+  font-size: 0.6em;
+  background-color: black;
+  -moz-box-shadow: inset 0 0 0 0em #33BFDB;
+  -webkit-box-shadow: inset 0 0 0 0em #33BFDB;
+  box-shadow: inset 0 0 0 0em #33BFDB;
+  display: inline-block;
+  margin-bottom: 1.2em;
+  padding: 0.1px 1em 0.1px 1em;
+  margin: 20px 0 0 0;
+  letter-spacing: 2px;
+}
+
+.time-line-info-list a {
+  font-weight: 200;
+}
+
+.time-line-info-list ul li {
+  font-size: 0.8em;
+  color: #919191;
+}
+
+.time-line-info-list .fa-external-link {
+  margin-left: 5px;
+}
+
+
+/* to-company */
+.section-to-company a {
+  margin: 20px 2rem 0 2rem;
+}
+
+.section-to-company {
+  margin: 0 0 100px 0;
+}
+
+/* footer */
+
+.footer {
+  border-top: 1px solid #eeeeee;
+}
+
+
+/* --------------------------------------------- */
+/* ▼iPhone6相当 (やや高解像度スマホに共通のデザイン) */
+/* --------------------------------------------- */
+@media all and (min-width: 375px) {
+
+}
+
+/* --------------------------------------------- */
+/* ▼iPhone6plus相当 (高解像度スマホに共通のデザイン) */
+/* --------------------------------------------- */
+@media all and (min-width: 412px) {
+  .orig-jumbotron {
+    height: 50vh;
+    min-height: 400px;
+  }
+
+  .page-title-h1 {
+    margin-top: 130px;
+  }
+
+  .simple-page p {
+    margin: 60px 0 0 0;
+    font-size: 1em;
+  }
+
+  .section-we-believe ol li {
+    padding: 0 2rem;
+  }
+
+  .section-we-believe ol li p {
+    margin-bottom: 5px;
+  }
+
+  .simple-list ul {
+    font-size: 1em;
+  }
+
+  .nested-simple-list ul li {
+    font-size: 0.9em;
+  }
+
+  .time-line-info-list ul li {
+    font-size: 0.9em;
+  }
+
+  .section-to-company a {
+    margin: 50px 2rem 0 2rem;
+  }
+}
+
+/* -------------------------------------------- */
+/* ▼タブレット用デザインとして付け足すデザイン */
+/* -------------------------------------------- */
+@media all and (min-width: 768px) {
+  .simple-page-main-section {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .simple-page-main-section section {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .orig-jumbotron {
+    height: 60vh;
+    min-height: 500px;
+  }
+
+  .page-title-h1 {
+    margin-top: 200px;
+    font-size: 2em;
+  }
+
+  .page-title-h2 {
+    font-size: 1.1em;
+  }
+
+  .simple-page p {
+    margin: 60px 0 0 0;
+  }
+}
+/* ------------------------------------ */
+/* ▼PC（小）用デザインとして付け足すデザイン */
+/* ------------------------------------ */
+@media all and (min-width: 920px) {
+  .simple-page-main-section {
+    width: 70%;
+  }
+}
+/* ------------------------------------ */
+/* ▼PC（大）用デザインとして付け足すデザイン */
+/* ------------------------------------ */
+@media all and (min-width: 1200px) {
+  .simple-page-main-section {
+    width: 50%;
+  }
+  .first-message {
+    margin-top: 50px;
+  }
+}
+/* ------------------------------------ */
+/* ▼PC（フルHD）用デザインとして付け足すデザイン */
+/* ------------------------------------ */
+@media all and (min-width: 1800px) {
+  .simple-page-main-section {
+    width: 40%;
+  }
+}
