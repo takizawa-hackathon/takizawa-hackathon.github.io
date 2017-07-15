@@ -559,71 +559,6 @@ button:focus,
   border: 1px solid rgba(53, 62, 85, 0.1);
 }
 
-/* ----------------------------------------------
- * Team Section
- *-----------------------------------------------*/
-
-.team .thumbnail {
-    padding          : 0;
-    line-height      : 22px;
-    background-color : transparent;
-    border           : 0;
-    margin-bottom: 30px;
-    }
-
-@media (max-width : 767px) {
-    .team .thumbnail {
-        margin-bottom : 30px;
-        }
-    }
-
-.team .thumbnail img {
-    width : 100%;
-    }
-
-.team .thumbnail .caption {
-    padding          : 10px;
-    }
-
-.team .thumbnail h3 {
-    font-size        : 16px;
-    font-weight: bold;
-
-    margin           : 0 40px;
-    text-transform   : uppercase;
-    padding          : 10px 0;
-    }
-
-
-
-.team .thumbnail h3 small {
-    font-size: 14px;
-    color     : #888;
-    display: block;
-    font-weight: normal;
-    }
-
-
-.team .social-links li {
-    display      : inline-block;
-    margin-right : 3px;
-    }
-
-.team .social-links li:last-child {
-    margin-right : 0;
-    }
-
-.team .social-links li a {
-    display   : block;
-    font-size : 14px;
-    color     : #ccc;
-    padding   : 0 5px;
-    }
-
-.team .social-links li a:hover {
-    color : #333;
-    }
-
 /* --------------------------
  * Agenda
  *---------------------------*/
@@ -774,7 +709,7 @@ button:focus,
 .sponsor-category p {
   font-weight: 200;
   font-size: 0.9em;
-  margin: 0;
+  margin: 8px 0 0 0;
 }
 
 /* --------------------------
