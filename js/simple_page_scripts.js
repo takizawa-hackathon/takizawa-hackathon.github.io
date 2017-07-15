@@ -34,7 +34,6 @@ $(function() {
     // --------------------------------------------------------------------
     particlesJS.load('background-particles', '/js/particles.json', function() {
       // customize file -> particles.json
-      console.log('particle.js loaded!');
     });
 
 }); // JQuery end

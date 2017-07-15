@@ -1,0 +1,81 @@
+.our-team-section {
+  margin: 100px auto 50px auto;
+}
+.our-team {
+  margin: 0 auto;
+}
+.at-user {
+  width: 100%;
+  margin: 30px 0;
+  text-align: center;
+}
+.at-user:hover .at-social {
+  opacity: 1;
+  transform: translateY(10px);
+}
+.at-user__avatar {
+  width: 98px;
+  height: 98px;
+  border-radius: 100%;
+  margin: 0 auto 20px;
+  overflow: hidden;
+}
+.at-user__avatar img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+.at-user__name {
+  color: #6F808A;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.6em;
+  font-style: italic;
+  line-height: 2.375rem;
+  letter-spacing: 1px;
+}
+.at-user__name_jp {
+  color: #313435;
+  font-family: "Noto Sans Japanese";
+  font-size: 0.8em;
+  font-weight: 500;
+  line-height: 2.625rem;
+}
+.at-social {
+  opacity: 0;
+  -webkit-transition: all 0.2s ease, opacity 0.2s ease;
+  transition: all 0.2s ease, opacity 0.2s ease;
+}
+.at-social__item {
+  display: inline-block;
+  margin: 0 10px;
+}
+.at-social__item a {
+  display: block;
+}
+.at-social__item svg {
+  fill: #515F65;
+  display: block;
+  height: 18px;
+  -webkit-transition: fill 0.2s ease;
+  transition: fill 0.2s ease;
+}
+.at-social__item svg:hover {
+  fill: #788D96;
+}
+
+/* ------------------------------------ */
+/* ▼PC（大）用デザインとして付け足すデザイン */
+/* ------------------------------------ */
+@media all and (min-width: 1200px) {
+  .our-team {
+    width: 50%;
+  }
+}
+/* ------------------------------------ */
+/* ▼PC（フルHD）用デザインとして付け足すデザイン */
+/* ------------------------------------ */
+@media all and (min-width: 1800px) {
+  .our-team {
+    width: 40%;
+  }
+}
