@@ -1,115 +1,3 @@
-/*-------------------
- * Jumbotron
- *-------------------*/
-
-.orig-jumbotron {
-    background-size       : cover;
-    padding               : 0;
-    margin                : 0;
-    height                : 100vh;
-    min-height            : 500px;
-    vertical-align        : middle;
-    position              : relative;
-    background-attachment : fixed;
-    background-repeat     : no-repeat;
-    background-position   : center center;
-    overflow              : hidden;
-    }
-
-.orig-jumbotron .content {
-    color             : #ffffff;
-    position          : absolute;
-    top               : 30%;
-    left              : 0;
-    right             : 0;
-    height            : 30%;
-    /*width             : 1170px;*/
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    transform         : translateY(-50%);
-    -webkit-transform : translateY(-50%);
-    -moz-transform    : translateY(-50%);
-}
-
-.orig-jumbotron .content-one {
-  top: 40%;
-}
-
-.orig-jumbotron .content-two {
-  top: 72%;
-}
-
-.orig-jumbotron .content .typewriter {
-    color     : #333333;
-    font-size: 40px;
-    line-height: 135%;
-  }
-
-.orig-jumbotron .content .event-date {
-    width: 235px;
-    height: 22px;
-    margin: 10px 0 10px 0;
-    background-image:url(../img/event-date.svg);
-    background-size:100%;
-    }
-
-.orig-jumbotron .btn {
-    background: #19b5c1;
-    background: linear-gradient(90deg,#19b5c1,#28c88c);
-    margin-top : 40px;
-    border-color: transparent;
-    border-radius: 4px;
-    transition: all .15s ease-in-out;
-}
-
-.orig-jumbotron .btn:hover {
-  -ms-transform: translateY(-2px);
-  -webkit-transform: translateY(-2px);
-  transform: translateY(-2px);
-  box-shadow: 0 2px 6px 0 rgba(25,181,193,.5);
-}
-
-.orig-jumbotron .btn-shadow {
-    box-shadow: 0 2px 6px 0 rgba(25,181,193,.5);
-}
-
-.orig-jumbotron .btn-shadow:hover {
-    box-shadow: 1px 3px 7px 0 rgba(25,181,193,.5);
-}
-
-.orig-jumbotron span {
-  text-decoration: none;
-}
-
-.orig-jumbotron .catch-copy {
-  font-weight: 900;
-
-}
-
-.orig-jumbotron .input-catch-copy {
-  font-weight: 900;
-}
-
-.event-share-nav {
-  margin-top: 10px;
-  line-height : 0;
-}
-
-.orig-jumbotron .event-share-nav ul {
-  width: 600px;
-  padding:0;
-  font-size:0px;
-}
-
-.orig-jumbotron .event-share-nav li {
-  display: inline-block;
-  text-align: center;
-  padding: 0 1.5px;
-}
-
 /*---------------------------
  * Section Wrapper
  *---------------------------*/
@@ -505,8 +393,14 @@
   .entry-section-message {
     margin: 20px 0;
   }
+  .entry-section-title h2 {
+    font-size: 1.3em;
+  }
   .entry-section-message p {
     letter-spacing: 1.6px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.7em;
   }
 }
 /* ------------------------------------ */
