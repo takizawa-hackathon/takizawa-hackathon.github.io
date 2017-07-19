@@ -153,6 +153,72 @@
 }
 
 /* --------------------------
+ * commit-engineer
+ *---------------------------*/
+.engineer-card {
+  margin: 0 0 90px 0;
+}
+
+.engineer-card .square-image {
+  width: 80%;
+  max-width: 300px;
+  height: auto;
+}
+
+.engineer-card .square-image img {
+  width: 100%;
+}
+
+.engineer-card .quare-image-wrapper {
+
+}
+
+.engineer-card .profile {
+  margin: 30px 0;
+
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 1.45em;
+  letter-spacing: .17em;
+  color: #333333;
+}
+
+.engineer-card .profile p.company-name {
+  font-size: 0.8em;
+  font-weight: 500;
+  margin: 0;
+}
+
+.engineer-card .profile h4.engineer-position {
+  font-size: 0.8em;
+  font-weight: 500;
+  letter-spacing: .1em;
+}
+
+.engineer-card .profile h3.engineer-name {
+  font-weight: 700;
+  font-size: 0.95em;
+  margin-bottom: 5px;
+}
+
+.engineer-card .profile p.en-name {
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: .1em;
+  font-size: .7em;
+  font-style: italic;
+}
+
+
+.engineer-card .profile p.intro {
+  font-weight: 300;
+  color: #737373;
+  letter-spacing: normal;
+  line-height: 2em;
+  font-size: .8em;
+}
+
+/* --------------------------
  * Pricing Table
  *---------------------------*/
 
@@ -439,7 +505,7 @@
 /* -------------------------------------------- */
 /* ▼タブレット用デザインとして付け足すデザイン */
 /* -------------------------------------------- */
-@media all and (min-width: 768px) {
+@media all and (min-width: 750px) {
   .omni-card {
     margin: 30px 10% 50px 10%;
   }
@@ -448,6 +514,24 @@
   }
   .omni-card .description p {
     font-size: 0.85em;
+  }
+
+  /*engineer-card*/
+  .engineer-card-sec {
+    margin: 60px 0 0 0;
+  }
+  .engineer-card {
+    margin: 0 5% 70px 5%;
+  }
+  .engineer-card .square-image {
+    width: 100%;
+    margin: 5px 0 0 0;
+  }
+  .engineer-card .square-image img {
+    width: 100%;
+  }
+  .engineer-card .profile {
+    margin: 0;
   }
 
   ul#countdown {
