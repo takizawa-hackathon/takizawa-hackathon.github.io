@@ -50,7 +50,6 @@
 }
 
 .about-event .google-map-link {
-  margin: 0 0 0 45px;
   padding: 3px 7px;
   border: 1px solid rgba(53, 62, 85, 0.1);
 }
@@ -143,6 +142,14 @@
 .omni-card .description p {
   font-weight: 300;
   font-size: 0.85em;
+}
+
+.section-team-position .omni-card .circle-image {
+  border: none;
+}
+
+.section-team-position .omni-card .circle-image {
+  margin: 0 auto 15px auto;
 }
 
 /* --------------------------
@@ -451,6 +458,12 @@
 /* ▼PC（小）用デザインとして付け足すデザイン */
 /* ------------------------------------ */
 @media all and (min-width: 920px) {
+  .omni-card .description h3 {
+    font-weight: 500;
+    font-size: 1.1em;
+    margin: 10px 0 20px 0;
+  }
+
   ul#countdown {
     width: 50%;
   }
