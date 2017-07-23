@@ -66,6 +66,31 @@
     ga('create', 'UA-102291421-1', 'auto');
     ga('send', 'pageview');
   </script>
+
+  <!-- Start of Async Drift Code -->
+  <script>
+    !function() {
+      var t;
+      if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
+      t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+      t.factory = function(e) {
+        return function() {
+          var n;
+          return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+        };
+      }, t.methods.forEach(function(e) {
+        t[e] = t.factory(e);
+      }), t.load = function(t) {
+        var e, n, o, i;
+        e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
+        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
+        n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+      });
+    }();
+    drift.SNIPPET_VERSION = '0.3.1';
+    drift.load('8uiv886ubpdx');
+  </script>
+  <!-- End of Async Drift Code -->
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar">
@@ -198,9 +223,6 @@
   </div>
   <!-- #main-wrapper -->
 
-  <!-- ChatWindow -->
-  <div data-appid="seaj45nzph8" data-color="black" data-meson="当ハッカソンに関わる疑問やお問い合わせがありましたらお気軽に！" data-mesoff="ただいまチャットサポート担当オペレータがオフライン中です。メールアドレスとメッセージを残して頂ければ、後日返信致します。" milkchat></div>
-
   <!-- TweetButton -->
   <script>
     ! function(d, s, id) {
@@ -226,10 +248,6 @@
 
   <!-- Plugin JavaScript -->
   <script type="text/javascript" src="/js/jquery.easing.min.js"></script>
-
-  <!-- ChatSupport -->
-  <script type="text/javascript" src="https://cdn.mlkcca.com/v0.6.0/milkcocoa.js"></script>
-  <script type="text/javascript" src="https://cdn.mlkcca.com/chatsupport.min.js"></script>
 
   <!-- particles-js -->
   <script type="text/javascript" src="/js/particles.min.js"></script>
