@@ -547,6 +547,14 @@
     margin: 10px 0 20px 0;
   }
 
+  .sponsor-img-horizontally-long {
+    width: 400px;
+  }
+
+  .sponsor-img a img {
+    width: 400px;
+  }
+
   ul#countdown {
     width: 50%;
   }
