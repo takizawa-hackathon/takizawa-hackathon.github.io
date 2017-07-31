@@ -97,10 +97,10 @@ $(function() {
   };
 
   function recruitingEndProcess() {
-    //　募集終了処理はあえてせず :)
+    //　募集終了の表示はあえてせず :)
 
-    // $(".countdown-section").empty();
-    // $(".section-title h4").empty();
+    $(".countdown-section").empty();
+    $(".section-title h4").empty();
     // $(".entry-btn a").addClass('target-event-none');
     // $(".entry-btn a").text("募集終了");
     // $("#entry-btn-top").addClass('target-event-none');
