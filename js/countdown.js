@@ -101,11 +101,11 @@ $(function() {
 
     $(".countdown-section").empty();
     $(".section-title h4").empty();
-    // $(".entry-btn a").addClass('target-event-none');
-    // $(".entry-btn a").text("募集終了");
-    // $("#entry-btn-top").addClass('target-event-none');
-    // $("#entry-btn-top").text("募集終了");
-    // $(".countdown-section").append('<p>募集は終了しました</p>');
+    $(".entry-btn a").addClass('target-event-none');
+    $(".entry-btn a").text("募集終了");
+    $("#entry-btn-top").addClass('target-event-none');
+    $("#entry-btn-top").text("募集終了");
+    $(".countdown-section").append('<p>募集は終了しました</p>');
   }
 
 });
