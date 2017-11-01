@@ -55,7 +55,7 @@ jQuery(function ($) {
     // particale.js
     // --------------------------------------------------------------------
 
-    particlesJS.load('background-particles', 'js/particles.json', function() {
+    particlesJS.load('background-particles', '/js/particles.json', function() {
       // customize file -> particles.json
     });
 
@@ -69,12 +69,9 @@ jQuery(function ($) {
     		message: [
     			'滝沢の課題を解決する;',
     			'ワクワクを生み出す;',
-    			'新しいものをつくる;',
-          'ものづくりを楽しむ;',
+    			'楽しい時間を過ごす;',
           'アイディアを形にする;',
-          '最初の一歩を踏み出す;',
-    			'新たな仲間をつくる;',
-          '未来の滝沢を創造する;'
+    			'新たな仲間を見つける;'
     		],
     		counterS: 0,
     		counterL: 0,
