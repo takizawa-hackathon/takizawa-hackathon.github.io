@@ -55,7 +55,7 @@ jQuery(function ($) {
     // particale.js
     // --------------------------------------------------------------------
 
-    particlesJS.load('background-particles', 'js/particles.json', function() {
+    particlesJS.load('background-particles', '/js/particles.json', function() {
       // customize file -> particles.json
     });
 
