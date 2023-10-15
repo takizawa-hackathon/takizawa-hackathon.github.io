@@ -40,27 +40,13 @@
   font-weight: 500;
   line-height: 2.625rem;
 }
-.at-social {
-  opacity: 0;
-  -webkit-transition: all 0.2s ease, opacity 0.2s ease;
-  transition: all 0.2s ease, opacity 0.2s ease;
-}
-.at-social__item {
-  display: inline-block;
-  margin: 0 10px;
-}
-.at-social__item a {
-  display: block;
-}
-.at-social__item svg {
-  fill: #515F65;
-  display: block;
-  height: 18px;
-  -webkit-transition: fill 0.2s ease;
-  transition: fill 0.2s ease;
-}
-.at-social__item svg:hover {
-  fill: #788D96;
+.at-user__bio {
+  margin-top: 10px;
+  color: #313435;
+  font-family: "Noto Sans Japanese";
+  font-size: 0.8em;
+  font-weight: 500;
+  line-height: 2.625rem;
 }
 
 /* ------------------------------------ */
@@ -68,7 +54,7 @@
 /* ------------------------------------ */
 @media all and (min-width: 1200px) {
   .our-team {
-    width: 50%;
+    width: 75%;
   }
 }
 /* ------------------------------------ */
