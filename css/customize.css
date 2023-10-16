@@ -107,3 +107,10 @@
     height: 34px;
   }
 }
+
+/* Medium(md)以下デザインで有効なスタイル */
+@media all and (max-width: 992px) {
+  .about-event-info {
+    margin-top: 60px;
+  }
+}

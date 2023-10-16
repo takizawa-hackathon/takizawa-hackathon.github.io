@@ -6,7 +6,7 @@
 }
 .at-user {
   width: 100%;
-  margin: 30px 0;
+  padding: 30px 10px;
   text-align: center;
 }
 .at-user:hover .at-social {
