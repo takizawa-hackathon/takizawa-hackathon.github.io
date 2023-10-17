@@ -27,7 +27,7 @@
  *-----------------------------------------------*/
 .about-event .lead {
     font-size   : 19px;
-    line-height : 1.7em;
+    line-height : 2em;
     }
 
 .about-event address {
@@ -390,6 +390,7 @@
   font-weight: 200;
   letter-spacing: 1.1px;
   font-size: 1em;
+  line-height: 2.6em;
 }
 
 .entry-section-title h2 {
@@ -568,7 +569,7 @@
     letter-spacing: 1.6px;
     font-size: 18px;
     font-weight: 300;
-    line-height: 1.7em;
+    line-height: 2.6em;
   }
 }
 /* ------------------------------------ */
