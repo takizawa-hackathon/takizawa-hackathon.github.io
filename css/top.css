@@ -467,6 +467,84 @@
    font-weight: normal;
  }
 
+ /* ------------------
+ * よくある質問
+ * ------------------*/
+ 
+ .section-faq-position .section-message p {
+  font-family: "Noto Sans Japanese";
+  font-size: 1em;
+  font-weight: 300;
+  color: #333333;
+  text-align: center;
+ }
+
+.section-faq ol {
+  counter-reset: item;
+  list-style-type: none;
+  padding: 0 2rem;
+}
+
+.section-faq ol li {
+  display: block;
+}
+
+.section-faq ol li:before {
+  content: "Q.";
+  counter-increment: item;
+  margin-right: 10px;
+}
+
+.section-faq ol li {
+  font: 18px Open Sans, sans-serif;
+  line-height: 28px;
+  color: #333333;
+  position: relative;
+}
+
+.section-faq ol li:before {
+  position: absolute;
+  margin: -2px 0 0 -35px;
+  font: bold italic 22px/1.5 Helvetica, Verdana, sans-serif;
+  color: #ccc;
+}
+
+.section-faq {
+  text-align: justify;
+  margin-top: 50px;
+}
+
+.section-faq ol li {
+  text-indent: 0 !important;
+  padding-left: 22px !important;
+  list-style-position: outside;
+  padding-bottom: 42px;
+  font-family: "Noto Sans Japanese";
+  font-weight: 500;
+}
+
+.section-faq ol li span {
+  font-size: 15px;
+  font-family: "Noto Sans Japanese";
+  font-weight: 300;
+  color: #333333;
+}
+
+.section-faq ol {
+  margin-left: 10px;
+}
+
+.section-faq p {
+  margin: 0 0 8px 0;
+  padding: 0;
+  font-size: 0.95em;
+}
+
+.section-faq .section-faq-answer {
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
 
 /* ---------------------------
  * これまで
