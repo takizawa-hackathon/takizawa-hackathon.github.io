@@ -22,6 +22,14 @@
     color     : #888888;
     }
 
+.section-message {
+  font-family: "Noto Sans Japanese";
+  font-size: 1em;
+  font-weight: 300;
+  color: #333333;
+  text-align: center;
+}
+
 /* ----------------------------------------------
  * About Event
  *-----------------------------------------------*/
@@ -298,46 +306,62 @@
   margin-top: 50px;
 }
 
-.sponsor-img {
-  margin: 0 auto;
-  width: 250px;
-  height: auto;
+.sponsor-card {
+  margin: 20px 0;
 }
 
-.sponsor-img a img {
-  width: 250px;
-  height: auto;
-  margin: 0 0 10px 0;
+.sponsor-picture {
+  display: block;
+  padding: 20px 15px;
+  height: 140px;
+  background-color: #ffffff;
 }
 
-.sponsor-category {
-  margin-bottom: 20px;
-  text-align: center;
+.sponsor-picture.picture-small {
+  padding: 35px 15px;
 }
 
-.sponsor-category h2 {
+.section-sponsor img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.sponsor-link {
+  position: relative;
+  margin: 10px 0;
+}
+
+.sponsor-link a {
+  color: #333333;
+  font-size: 1.4rem;
   font-weight: 400;
-  font-size: 1.3em;
-  letter-spacing: 1px;
-  margin: 0;
 }
 
-.sponsor-category p {
-  font-weight: 200;
-  font-size: 0.9em;
-  margin: 8px 0 0 0;
+.sponsor-link a:hover {
+  opacity: 0.5;
+  text-decoration: underline solid #333333;;
+}
+
+.sponsor-link a:after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  width: 14px;
+  height: 14px;
+  margin-left: 5px;
+  margin-top: 1px;
+  display: inline-block;
+  line-height: 1.75;
+  background: url(/img/icon_link.svg) no-repeat 50%/contain;
 }
 
 /* --------------------------
  * 会場提供
  *---------------------------*/
 
-.section-hall {
-  border-top: 1px solid #eeeeee;
-}
-
 .section-hall .section-title {
-  margin-bottom: 35px;
+  margin-top: 100px;
 }
 
 .section-hall-place {
@@ -349,6 +373,54 @@
 .section-hall-place i {
   margin: 0 7px 0 0;
   font-size: 1.15em;
+}
+
+.hall-card {
+  margin: 0 auto;
+  width: 350px;
+}
+
+.hall-picture {
+  display: block;
+  padding: 20px 15px;
+  margin: 0 auto;
+  height: 140px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.section-hall img {
+  object-fit: contain;
+  height: 100%;
+}
+
+.hall-link {
+  position: relative;
+  margin: 10px 0;
+}
+
+.hall-link a {
+  color: #333333;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.hall-link a:hover {
+  opacity: 0.5;
+  text-decoration: underline solid #333333;;
+}
+
+.hall-link a:after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  width: 14px;
+  height: 14px;
+  margin-left: 5px;
+  margin-top: 1px;
+  display: inline-block;
+  line-height: 1.75;
+  background: url(/img/icon_link.svg) no-repeat 50%/contain;
 }
 
 /* --------------------------
@@ -470,14 +542,6 @@
  /* ------------------
  * よくある質問
  * ------------------*/
- 
- .section-faq-position .section-message p {
-  font-family: "Noto Sans Japanese";
-  font-size: 1em;
-  font-weight: 300;
-  color: #333333;
-  text-align: center;
- }
 
 .section-faq ol {
   counter-reset: item;
