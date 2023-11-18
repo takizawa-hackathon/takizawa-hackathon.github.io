@@ -471,6 +471,14 @@
  * よくある質問
  * ------------------*/
  
+ .section-faq-position .section-message p {
+  font-family: "Noto Sans Japanese";
+  font-size: 1em;
+  font-weight: 300;
+  color: #333333;
+  text-align: center;
+ }
+
 .section-faq ol {
   counter-reset: item;
   list-style-type: none;
