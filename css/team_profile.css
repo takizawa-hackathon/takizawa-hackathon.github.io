@@ -26,8 +26,8 @@
   max-width: 100%;
 }
 .at-user__name {
-  color: #6F808A;
-  font-family: 'Roboto', sans-serif;
+  color: #6f808a;
+  font-family: "Roboto", sans-serif;
   font-size: 0.6em;
   font-style: italic;
   line-height: 2.375rem;
@@ -47,6 +47,21 @@
   font-size: 0.8em;
   font-weight: 500;
   line-height: 2.625rem;
+}
+.at-user__sns-items {
+  margin-top: 10px;
+}
+.at-user__sns-item {
+  margin: 0 5px;
+}
+.at-user__sns-item_x {
+  width: 25px;
+}
+.at-user__sns-item_facebook {
+  width: 29px;
+}
+.at-user__sns-item_github {
+  width: 30px;
 }
 
 /* ------------------------------------ */
