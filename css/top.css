@@ -300,12 +300,8 @@
 
 
 /* --------------------------
- * スポンサー
+ * スポンサー／会場提供
  *---------------------------*/
-.sponsor-section {
-  margin-top: 50px;
-}
-
 .sponsor-card {
   margin: 20px 0;
 }
@@ -360,67 +356,17 @@
  * 会場提供
  *---------------------------*/
 
-.section-hall .section-title {
+.section-venue .section-title {
   margin-top: 100px;
 }
 
-.section-hall-place {
-  font-size: 0.95em;
-  text-align: center;
-  color: #353E55;
-}
-
-.section-hall-place i {
-  margin: 0 7px 0 0;
-  font-size: 1.15em;
-}
-
-.hall-card {
+.venue-card {
   margin: 0 auto;
   width: 350px;
 }
 
-.hall-picture {
-  display: block;
-  padding: 20px 15px;
-  margin: 0 auto;
-  height: 140px;
-  background-color: #ffffff;
-  text-align: center;
-}
-
-.section-hall img {
-  object-fit: contain;
-  height: 100%;
-}
-
-.hall-link {
-  position: relative;
-  margin: 10px 0;
-}
-
-.hall-link a {
-  color: #333333;
-  font-size: 1.4rem;
-  font-weight: 400;
-}
-
-.hall-link a:hover {
-  opacity: 0.5;
-  text-decoration: underline solid #333333;;
-}
-
-.hall-link a:after {
-  content: "";
-  position: absolute;
-  top: 7px;
-  width: 14px;
-  height: 14px;
-  margin-left: 5px;
-  margin-top: 1px;
-  display: inline-block;
-  line-height: 1.75;
-  background: url(/img/icon_link.svg) no-repeat 50%/contain;
+.venue-card .sponsor-picture.picture-small {
+  padding: 35px 40px;
 }
 
 /* --------------------------
