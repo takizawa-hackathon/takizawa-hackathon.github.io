@@ -2,25 +2,25 @@
  * Section Wrapper
  *---------------------------*/
 .section-wrapper {
-    padding : 100px 0;
-    }
+  padding: 100px 0;
+}
 
 /*---------------------------
  * Section Title
  *---------------------------*/
 .section-title {
-    margin-bottom : 60px;
-    text-align    : center;
-    }
+  margin-bottom: 60px;
+  text-align: center;
+}
 
 .section-title h1 {
-    margin-bottom : 5px;
-    }
+  margin-bottom: 5px;
+}
 
 .section-title p {
-    font-size : 18px;
-    color     : #888888;
-    }
+  font-size: 18px;
+  color: #888888;
+}
 
 .section-message {
   font-family: "Noto Sans Japanese";
@@ -34,19 +34,19 @@
  * About Event
  *-----------------------------------------------*/
 .about-event .lead {
-    font-size   : 19px;
-    line-height : 2em;
-    }
+  font-size: 19px;
+  line-height: 2em;
+}
 
 .about-event address {
-    font-size   : 0.9em;
-    font-family: "Noto Sans Japanese";
-    font-weight: 400;
-    line-height : 1.8em;
-    }
+  font-size: 0.9em;
+  font-family: "Noto Sans Japanese";
+  font-weight: 400;
+  line-height: 1.8em;
+}
 
 .about-event address strong {
-    color : #353e55;
+  color: #353e55;
 }
 
 .about-event .google-map-button {
@@ -66,41 +66,41 @@
  * Agenda
  *---------------------------*/
 .section-ajenda .session {
-    padding       : 15px 0;
-    border-left   : 1px solid #EAEAEA;
-    margin-bottom : 40px;
-    }
+  padding: 15px 0;
+  border-left: 1px solid #EAEAEA;
+  margin-bottom: 40px;
+}
 
 .section-ajenda .session time {
-    padding       : 5px 25px 15px;
-    border-bottom : 1px solid #EAEAEA;
-    display       : inline-block;
-    font-family: "Helvetica Neue";
-    font-weight: bold;
-    }
+  padding: 5px 25px 15px;
+  border-bottom: 1px solid #EAEAEA;
+  display: inline-block;
+  font-family: "Helvetica Neue";
+  font-weight: bold;
+}
 
 .section-ajenda .session h2 {
-    margin : 20px 0 0 20px;
-    font-size: 1.1em;
-    }
+  margin: 20px 0 0 20px;
+  font-size: 1.1em;
+}
 
 .section-ajenda .session h3 {
-    margin         : 15px 0 20px 20px;
-    font-size      : 0.9em;
+  margin: 15px 0 20px 20px;
+  font-size: 0.9em;
 }
 
 .section-ajenda .session h3 span {
-    font-size   : 15px;
-    display     : block;
-    line-height : 1.5;
-    padding-top: 10px;
+  font-size: 15px;
+  display: block;
+  line-height: 1.5;
+  padding-top: 10px;
 }
 
 .section-day-wrap {
   margin: 10px 0 40px 0;
 }
 
-.section-day-title h2 span{
+.section-day-title h2 span {
   font-size: 1.1em;
   font-weight: 600;
 }
@@ -123,9 +123,7 @@
   border: solid 0.5px #F4F4F2;
 }
 
-.omni-card .circle-image-wrapper {
-
-}
+.omni-card .circle-image-wrapper {}
 
 .omni-card .circle-image img {
   position: absolute;
@@ -177,9 +175,7 @@
   width: 100%;
 }
 
-.engineer-card .quare-image-wrapper {
-
-}
+.engineer-card .quare-image-wrapper {}
 
 .engineer-card .profile {
   margin: 30px 0;
@@ -231,72 +227,72 @@
  *---------------------------*/
 
 .pricing-section .pricing-table-default {
-    border         : 1px solid #f1f1f1;
-    background     : #ffffff;
-    padding-bottom : 40px;
-    }
+  border: 1px solid #f1f1f1;
+  background: #ffffff;
+  padding-bottom: 40px;
+}
 
 @media (max-width : 766px) {
-    .pricing-section .pricing-table-default {
-        margin-bottom : 30px;
-        }
-    }
+  .pricing-section .pricing-table-default {
+    margin-bottom: 30px;
+  }
+}
 
 .pricing-section .pricing-head h3 {
-    font-size        : 15px;
-    font-weight      : bold;
-    text-transform   : uppercase;
-    color            : #ffffff;
-    padding          : 14px 40px;
-    margin           : 0;
-    background-color : #333333;
-    }
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 14px 40px;
+  margin: 0;
+  background-color: #333333;
+}
 
 .pricing-section .pricing-head .price {
-    display     : block;
-    font-size   : 60px;
-    line-height : 60px;
-    font-weight : bold;
-    padding     : 43px 0 0;
-    }
+  display: block;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: bold;
+  padding: 43px 0 0;
+}
 
 .pricing-section .pricing-head .price sup {
-    font-size      : 24px;
-    font-weight    : bold;
-    vertical-align : super;
-    top            : 0;
-    }
+  font-size: 24px;
+  font-weight: bold;
+  vertical-align: super;
+  top: 0;
+}
 
 .pricing-section .pricing-detail {
-    margin : 0 50px 25px 50px;
-    }
+  margin: 0 50px 25px 50px;
+}
 
 .pricing-section .pricing-detail p {
-    margin : 0;
-    }
+  margin: 0;
+}
 
 /*pricing list*/
 
 .pricing-section .pricing-list li {
-    display : block;
-    padding : 8px 0;
-    }
+  display: block;
+  padding: 8px 0;
+}
 
 .pricing-section .pricing-list li i {
-    margin-right : 17px;
-    }
+  margin-right: 17px;
+}
 
 .pricing-section .pricing-list li:first-child {
-    padding-top : 25px;
-    }
+  padding-top: 25px;
+}
 
 .pricing-section .pricing-list li:last-child {
-    padding : 12px 0 0;
-    }
+  padding: 12px 0 0;
+}
 
 .pricing-section .pricing-detail .pink-i li {
-    position : relative;
-    }
+  position: relative;
+}
 
 
 /* --------------------------
@@ -336,7 +332,8 @@
 
 .sponsor-link a:hover {
   opacity: 0.5;
-  text-decoration: underline solid #333333;;
+  text-decoration: underline solid #333333;
+  ;
 }
 
 .sponsor-link a:after {
@@ -373,18 +370,18 @@
  * チーム
  *---------------------------*/
 
- .member-img {
-   width: 100px;
-   height: 100px;
-   margin: 0 auto;
- }
+.member-img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
 
- .member-img a img {
-   width: 100px;
-   height: 100px;
-   border-radius: 50%;
-   margin: 30px 0;
- }
+.member-img a img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 30px 0;
+}
 
 
 /* ------------------
@@ -419,33 +416,33 @@
   width: 250px;
 }
 
- .entry-btn .btn {
-     background: #19b5c1;
-     background: linear-gradient(90deg,#19b5c1,#28c88c);
-     margin-top : 40px;
-     border-color: transparent;
-     border-radius: 4px;
-     transition: all .15s ease-in-out;
-     text-align:center;
- }
+.entry-btn .btn {
+  background: #19b5c1;
+  background: linear-gradient(90deg, #19b5c1, #28c88c);
+  margin-top: 40px;
+  border-color: transparent;
+  border-radius: 4px;
+  transition: all .15s ease-in-out;
+  text-align: center;
+}
 
- .entry-btn .btn:hover {
-   -ms-transform: translateY(-2px);
-   -webkit-transform: translateY(-2px);
-   transform: translateY(-2px);
-   box-shadow: 0 2px 6px 0 rgba(25,181,193,.5);
- }
+.entry-btn .btn:hover {
+  -ms-transform: translateY(-2px);
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+  box-shadow: 0 2px 6px 0 rgba(25, 181, 193, .5);
+}
 
- .entry-btn .btn-shadow {
-     box-shadow: 0 2px 6px 0 rgba(25,181,193,.5);
- }
+.entry-btn .btn-shadow {
+  box-shadow: 0 2px 6px 0 rgba(25, 181, 193, .5);
+}
 
- .entry-btn .btn-shadow:hover {
-     box-shadow: 1px 3px 7px 0 rgba(25,181,193,.5);
- }
+.entry-btn .btn-shadow:hover {
+  box-shadow: 1px 3px 7px 0 rgba(25, 181, 193, .5);
+}
 
 .countdown-section {
-   margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .countdown-section p {
@@ -456,36 +453,38 @@
   text-align: center;
 }
 
- ul#countdown {
-   position: relative;
-   top: 50%;
-   transform: translateY(-50%);
-   width: 90%;
-   margin: 100px auto 0 auto;
-   padding: 30px 0 20px 0;
-   color: #333333;
-   border: 1px solid #adafb2;
-   border-width: 1px 0;
-   overflow: hidden;
-   font-family: "Noto Sans Japanese";
-   font-weight: bold;
- }
- ul#countdown li {
-   margin: 0 -3px 0 0;
-   padding: 0;
-   display: inline-block;
-   width: 25%;
-   font-size: 2em;
-   text-align: center;
- }
- ul#countdown li .label {
-   color: #adafb2;
-   font-size: 15px;
-   text-transform: uppercase;
-   font-weight: normal;
- }
+ul#countdown {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 90%;
+  margin: 100px auto 0 auto;
+  padding: 30px 0 20px 0;
+  color: #333333;
+  border: 1px solid #adafb2;
+  border-width: 1px 0;
+  overflow: hidden;
+  font-family: "Noto Sans Japanese";
+  font-weight: bold;
+}
 
- /* ------------------
+ul#countdown li {
+  margin: 0 -3px 0 0;
+  padding: 0;
+  display: inline-block;
+  width: 25%;
+  font-size: 2em;
+  text-align: center;
+}
+
+ul#countdown li .label {
+  color: #adafb2;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+/* ------------------
  * よくある質問
  * ------------------*/
 
@@ -560,8 +559,7 @@
  * これまで
  * --------------------------- */
 
-.locus-wrap {
-}
+.locus-wrap {}
 
 .locus-img {
   width: 100px;
@@ -579,16 +577,12 @@
 /* --------------------------------------------- */
 /* ▼iPhone6相当 (やや高解像度スマホに共通のデザイン) */
 /* --------------------------------------------- */
-@media all and (min-width: 375px) {
-
-}
+@media all and (min-width: 375px) {}
 
 /* --------------------------------------------- */
 /* ▼iPhone6plus相当 (高解像度スマホに共通のデザイン) */
 /* --------------------------------------------- */
-@media all and (min-width: 412px) {
-
-}
+@media all and (min-width: 412px) {}
 
 /* -------------------------------------------- */
 /* ▼タブレット用デザインとして付け足すデザイン */
@@ -597,9 +591,11 @@
   .omni-card {
     margin: 30px 10% 50px 10%;
   }
+
   .omni-card .description h3 {
     font-size: 1.1em;
   }
+
   .omni-card .description p {
     font-size: 0.95em;
   }
@@ -608,16 +604,20 @@
   .engineer-card-sec {
     margin: 60px 0 0 0;
   }
+
   .engineer-card {
     margin: 0 5% 70px 5%;
   }
+
   .engineer-card .square-image {
     width: 100%;
     margin: 5px 0 0 0;
   }
+
   .engineer-card .square-image img {
     width: 100%;
   }
+
   .engineer-card .profile {
     margin: 0;
   }
@@ -626,6 +626,7 @@
     width: 60%;
   }
 }
+
 /* ------------------------------------ */
 /* ▼PC（小）用デザインとして付け足すデザイン */
 /* ------------------------------------ */
@@ -647,12 +648,15 @@
   ul#countdown {
     width: 50%;
   }
+
   .entry-section-message {
     margin: 20px 0;
   }
+
   .entry-section-title h2 {
     font-size: 1.3em;
   }
+
   .entry-section-message p {
     letter-spacing: 1.6px;
     font-size: 18px;
@@ -660,6 +664,7 @@
     line-height: 2.6em;
   }
 }
+
 /* ------------------------------------ */
 /* ▼PC（大）用デザインとして付け足すデザイン */
 /* ------------------------------------ */
@@ -667,16 +672,20 @@
   ul#countdown {
     margin: 120px auto 0 auto;
   }
+
   ul#countdown li {
     font-size: 2.2em;
   }
+
   ul#countdown li .label {
     font-size: 17px;
   }
+
   .entry-section-title h4 {
     margin-top: 20px;
   }
 }
+
 /* ------------------------------------ */
 /* ▼PC（フルHD）用デザインとして付け足すデザイン */
 /* ------------------------------------ */
@@ -684,6 +693,7 @@
   ul#countdown li {
     font-size: 2.5em;
   }
+
   ul#countdown li .label {
     font-size: 19px;
   }
