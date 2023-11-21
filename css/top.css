@@ -313,6 +313,10 @@
   padding: 35px 15px;
 }
 
+.sponsor-picture.picture-medium {
+  padding: 28px 15px;
+}
+
 .section-sponsor img {
   object-fit: contain;
   width: 100%;
