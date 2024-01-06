@@ -36,4 +36,10 @@ $(function() {
       // customize file -> particles.json
     });
 
+    // --------------------------------------------------------------------
+    // copyright year display process
+    // --------------------------------------------------------------------
+    $(function () {
+        $('#copyright-year').text(new Date().getFullYear());
+    }());
 }); // JQuery end
