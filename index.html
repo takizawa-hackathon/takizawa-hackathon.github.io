@@ -38,7 +38,7 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.mlkcca.com/chatsupport.min.css" />
 
   <!-- Style CSS -->
-  <link href="/css/style.css?20170719" rel="stylesheet" />
+  <link href="/css/style.css?202401052343" rel="stylesheet" />
   <link href="/css/customize.css" rel="stylesheet" />
   <link href="/css/top.css?202311212332" rel="stylesheet" />
 
@@ -52,7 +52,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VQK7SF1LM4"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-VQK7SF1LM4');
@@ -590,19 +590,21 @@
   </section>
   <!-- section-locus -->
 
-
   <footer class="footer">
-    <div class="copyright-section">
-      <div class="container">
-        <div class="col-md-12">
-          <div class="copytext text-center">&copy; 2023 滝沢ハッカソン運営委員会 | Design by <a
-              href="https://uicookies.com">uiCookies</a> and modify by <a href="https://github.com/rkonno">rkonno</a>
+    <div class="container-fluid">
+      <div class="links-section">
+          <a href="/privacy/">プライバシーポリシー</a>
+        </div>
+        <!-- .links-section -->
+        <div class="copyright-section">
+          <div class="copytext">
+            &copy; <span id="copyright-year"></span> 滝沢ハッカソン運営委員会 | Design by <a href="https://uicookies.com">uiCookies</a> and modify by <a
+              href="https://github.com/rkonno">rkonno</a>
           </div>
         </div>
+        <!-- .copyright-section -->
       </div>
-      <!-- .container -->
     </div>
-    <!-- .copyright-section -->
   </footer>
   <!-- .footer -->
 
@@ -642,7 +644,6 @@
   <!-- countdown.js -->
   <script src="/js/countdown_ver5.js"></script>
 
-  <!--<script src="/js/one-page-nav.js"></script>-->
   <script src="/js/scripts.js"></script>
 </body>
 

@@ -503,13 +503,26 @@ button:focus, .btn:focus, .btn:active:focus {
  *   Footer
  *---------------------------------------------- */
 
+.footer {
+  padding: 30px;
+}
+
+.footer .container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1170px;
+}
+
+/* links */
+.footer .links-section {
+  font-size: 13px;
+  font-weight: 300;
+}
 
 /* Copyright */
-
 .footer .copyright-section {
   font-size: 13px;
   color: #888888;
-  padding: 30px 0;
 }
 
 .footer .copyright-section .copytext {

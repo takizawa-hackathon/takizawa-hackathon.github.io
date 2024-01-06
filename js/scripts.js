@@ -111,4 +111,11 @@ jQuery(function ($) {
     	};
     	message.init();
     });
+
+    // --------------------------------------------------------------------
+    // copyright year display process
+    // --------------------------------------------------------------------
+    $(function () {
+        $('#copyright-year').text(new Date().getFullYear());
+    }());
 }); // JQuery end
