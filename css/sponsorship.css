@@ -29,6 +29,11 @@
     margin: 5px 0;
 }
 
+.sponsorship-section li ul {
+    margin: 5px 0 20px 0;
+}
+
+
 .sponsorship-section .domain::before {
     content: '@';
 }
