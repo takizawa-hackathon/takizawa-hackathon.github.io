@@ -1,0 +1,67 @@
+.page-title-h1 {
+    letter-spacing: 2px;
+}
+
+.sponsorship-section {
+    margin: 30px 0 60px 0;
+}
+
+.sponsorship-section h3 {
+    margin: 60px 0 0 0;
+    text-transform: none;
+}
+
+.sponsorship-section p {
+    margin: 20px 0 0 0;
+}
+
+.sponsorship-section .top-message {
+    margin: 80px 0 0 0;
+}
+
+.sponsorship-section ul {
+    margin: 20px;
+    padding: 0 0 0 30px;
+    list-style: circle;
+}
+
+.sponsorship-section li {
+    margin: 5px 0;
+}
+
+.sponsorship-section li ul {
+    margin: 5px 0 20px 0;
+}
+
+.sponsorship-section .domain::before {
+    content: '@';
+}
+
+.entry-btn {
+    width: 250px;
+}
+
+.entry-btn .btn {
+    background: #19b5c1;
+    background: linear-gradient(90deg, #19b5c1, #28c88c);
+    margin: 20px 0 0 20px;
+    border-color: transparent;
+    border-radius: 4px;
+    transition: all .15s ease-in-out;
+    text-align: center;
+}
+
+.entry-btn .btn:hover {
+    -ms-transform: translateY(-2px);
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+    box-shadow: 0 2px 6px 0 rgba(25, 181, 193, .5);
+}
+
+.entry-btn .btn-shadow {
+    box-shadow: 0 2px 6px 0 rgba(25, 181, 193, .5);
+}
+
+.entry-btn .btn-shadow:hover {
+    box-shadow: 1px 3px 7px 0 rgba(25, 181, 193, .5);
+}
