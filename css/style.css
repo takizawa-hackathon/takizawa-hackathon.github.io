@@ -435,15 +435,20 @@ button:focus, .btn:focus, .btn:active:focus {
     color     : #333333;
     font-size: 40px;
     line-height: 145%;
-  }
+}
 
 .orig-jumbotron .content .event-date {
     width: 235px;
-    height: 22px;
-    margin: 10px 0 10px 0;
-    background-image:url(../img/event-date-ver4.svg);
-    background-size:100%;
-    }
+    height: 31px;
+    margin: 10px 0 16px 6px;
+    background-image: url(../img/event-date-ver6.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.event-share-nav {
+  margin-top: 30px;
+}
 
 .orig-jumbotron .btn {
     background: #19b5c1;

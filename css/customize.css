@@ -9,6 +9,11 @@
   display: inline-flex;
 }
 
+.orig-jumbotron .title-cursor {
+  font-size: 40px;
+  vertical-align: 1%;
+}
+
 
 /* --------------------------------------------- */
 /* ▼iPhone6相当 (やや高解像度スマホに共通のデザイン) */
@@ -23,10 +28,6 @@
   .orig-jumbotron .content .typewriter {
     font-size: 50px;
   }
-  .orig-jumbotron .content .event-date {
-      width: 255px;
-      height: 24px;
-  }
 }
 
 /* --------------------------------------------- */
@@ -34,7 +35,11 @@
 /* --------------------------------------------- */
 @media all and (min-width: 412px) {
   .orig-jumbotron .content .typewriter {
-    font-size: 58px;
+    font-size: 67px;
+  }
+  .orig-jumbotron .title-cursor {
+    font-size: 60px;
+    vertical-align: 2%;
   }
 }
 
@@ -50,15 +55,19 @@
     width: 750px;
     padding: 0 25px;
   }
+  .orig-jumbotron .title-cursor {
+    font-size: 60px;
+    vertical-align: 2%;
+  }
   .orig-jumbotron .content .event-date {
     width: 335px;
-    height: 31px;
+    height: 35px;
   }
   .orig-jumbotron .content-one {
     top: 50%;
   }
   .orig-jumbotron .content-two {
-    top: 80%;
+    top: 85%;
   }
 }
 /* ------------------------------------ */
@@ -73,13 +82,14 @@
     width: 970px;
   }
   .orig-jumbotron .content-two {
-    top: 70%;
+    top: 74%;
+  }
+  .orig-jumbotron .title-cursor {
+    font-size: 80px;
+    vertical-align: 8%;
   }
   .event-share-nav {
-    margin-top: 20px;
-  }
-  span.title-cursor {
-    font-size: 58px;
+    margin-top: 30px;
   }
 }
 /* ------------------------------------ */
@@ -94,17 +104,18 @@
     padding: 0 10px;
   }
   .orig-jumbotron .content-one {
-    top: 55%;
+    top: 52%;
   }
   .orig-jumbotron .content-two {
-    top: 78%;
+    top: 80%;
   }
   .orig-jumbotron .content .typewriter {
     font-size: 80px;
   }
   .orig-jumbotron .content .event-date {
-    width: 369px;
-    height: 34px;
+    width: 382px;
+    height: 43px;
+    margin: 10px 0 16px 2px;
   }
 }
 
