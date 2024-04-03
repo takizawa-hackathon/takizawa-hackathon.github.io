@@ -412,7 +412,7 @@ button:focus, .btn:focus, .btn:active:focus {
     left              : 0;
     right             : 0;
     height            : 30%;
-    /*width             : 1170px;*/
+    width             : 1300px;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -434,7 +434,7 @@ button:focus, .btn:focus, .btn:active:focus {
 .orig-jumbotron .content .typewriter {
     color     : #333333;
     font-size: 40px;
-    line-height: 135%;
+    line-height: 145%;
   }
 
 .orig-jumbotron .content .event-date {
@@ -475,16 +475,20 @@ button:focus, .btn:focus, .btn:active:focus {
 
 .orig-jumbotron .catch-copy {
   font-weight: 900;
-
 }
 
 .orig-jumbotron .input-catch-copy {
   font-weight: 900;
 }
 
+.orig-jumbotron .title-cursor {
+  font-size: 82px;
+  vertical-align: 8%;
+}
+
 .event-share-nav {
   margin-top: 10px;
-  line-height : 0;
+  line-height: 0;
 }
 
 .orig-jumbotron .event-share-nav ul {
@@ -497,6 +501,7 @@ button:focus, .btn:focus, .btn:active:focus {
   display: inline-block;
   text-align: center;
   padding: 0 1.5px;
+  margin: 0 5px;
 }
 
 /* --------------------------------------------

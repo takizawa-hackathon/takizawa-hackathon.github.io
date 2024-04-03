@@ -4,7 +4,7 @@ $(function() {
    * GLOBAL VARS
    * -------------------------- */
   // The date you want to count down to
-  var targetDate = new Date("2017/07/30 23:59:59");
+  var targetDate = new Date("2024/06/21 23:59:59");
 
   // Other date related variables
   var days;
@@ -97,8 +97,6 @@ $(function() {
   };
 
   function recruitingEndProcess() {
-    //　募集終了の表示はあえてせず :)
-
     $(".countdown-section").empty();
     $(".section-title h4").empty();
     $(".entry-btn a").addClass('target-event-none');
