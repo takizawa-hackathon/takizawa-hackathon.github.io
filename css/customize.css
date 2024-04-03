@@ -23,7 +23,7 @@
     top: 40%;
   }
   .orig-jumbotron .content-two {
-    top: 76%;
+    top: 80%;
   }
   .orig-jumbotron .content .typewriter {
     font-size: 50px;
@@ -35,11 +35,11 @@
 /* --------------------------------------------- */
 @media all and (min-width: 412px) {
   .orig-jumbotron .content .typewriter {
-    font-size: 67px;
+    font-size: 52px;
   }
   .orig-jumbotron .title-cursor {
-    font-size: 60px;
-    vertical-align: 2%;
+    font-size: 45px;
+    vertical-align: 5%;
   }
 }
 
