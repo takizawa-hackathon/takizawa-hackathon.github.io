@@ -309,6 +309,10 @@
   background-color: #ffffff;
 }
 
+.sponsor-picture.picture-extra-small {
+  padding: 38px 50px;
+}
+
 .sponsor-picture.picture-small {
   padding: 30px 40px;
 }
@@ -563,7 +567,9 @@ ul#countdown li .label {
  * これまで
  * --------------------------- */
 
-.locus-wrap {}
+.locus-wrap {
+  margin: 5px 5px;
+}
 
 .locus-img {
   width: 100px;
