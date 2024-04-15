@@ -4,15 +4,21 @@
     <div class="at-user__name">{{ page.member_name_en }}</div>
     <div class="at-user__name_jp">{{ page.member_name_ja }}</div>
     <div class="at-user__sns-items">
+      {% if page.member_x %}
       <a href="{{ page.member_x }}" target="_blank" class="at-user__sns-item">
         <img src="/img/logo_x.png" class="at-user__sns-item_x" />
       </a>
+      {% endif %}
+      {% if page.member_facebook %}
       <a href="{{ page.member_facebook }}" target="_blank" class="at-user__sns-item">
         <img src="/img/logo_facebook.png" class="at-user__sns-item_facebook" />
       </a>
+      {% endif %}
+      {% if page.member_github %}
       <a href="{{ page.member_github }}" target="_blank" class="at-user__sns-item">
         <img src="/img/logo_github.png" class="at-user__sns-item_github" />
       </a>
+      {% endif %}
     </div>
     <div class="at-user__bio">
       {{ page.member_description }}
