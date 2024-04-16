@@ -1,0 +1,43 @@
+<label class="timeline-event-icon"></label>
+<div class="timeline-event-copy">
+  <p class="timeline-event-thumbnail">{{ page.date | date: "%Y/%m/%d" }}</p>
+  <h3>Takizawa Hackathon ver.{{ page.event_version }}を開催</h3>
+  <h4>{{ page.event_desctiption }}</h4>
+  <div class="time-line-info-list">
+    <ul>
+      <li>
+        <p class="time-line-event-comment">
+          <strong>テーマ</strong><br> {{ page.event_theme }}
+        </p>
+      </li>
+      <li>
+        <p class="time-line-event-comment">
+          <strong>開催場所</strong><br> {{ page.event_place }}
+        </p>
+      </li>
+      <li>
+        <p class="time-line-event-comment">
+          <strong>参加人数</strong><br> {{ page.event_attendance }}
+        </p>
+      </li>
+      <li>
+        <p class="time-line-event-comment">
+          <strong>
+            <a href="{{ page.event_page_url }}">{{ page.event_page_title }}<i class="fa fa-external-link" aria-hidden="true"></i></a>
+          </strong>
+          <br>
+        </p>
+      </li>
+      {% if page.event_homepage_url and page.event_homepage_title %}
+      <li>
+        <p class="time-line-event-comment">
+          <strong>
+            <a href="{{ page.event_homepage_url }}">{{ page.event_homepage_title }}<i class="fa fa-external-link" aria-hidden="true"></i></a>
+          </strong>
+          <br>
+        </p>
+      </li>
+      {% endif %}
+    </ul>
+  </div>
+</div>
