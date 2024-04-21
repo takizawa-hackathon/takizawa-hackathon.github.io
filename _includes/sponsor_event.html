@@ -1,0 +1,21 @@
+<section id="event-section" class="event-section">
+  <div class="container simple-page-wrapper">
+    <div class="row">
+      <div class="section-titles">
+        <h3>{{ page.event_name }}</h3>
+        <p class="sub-title">{{ page.author }}様主催</p>
+      </div>
+
+      <div class="simple-list">
+        開催日: {{ page.event_date }}</br>
+        対象: {{ page.target }}</br>
+        募集終了日: {{ page.entry_end_date }}</br>
+        <!-- TODO: styleを当てる -->
+        <div class="entry-btn center-block">
+          <a href="{{ page.form_url }}"
+            class="btn btn-default btn-shadow wf-notosansjapanese" target="_blank">参加申し込みをする</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
