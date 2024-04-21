@@ -7,9 +7,9 @@
       </div>
 
       <div class="simple-list">
-        開催日: {{ page.event_date }}<br>
+        開催日: {{ page.event_date | date: "%Y/%m/%d(%a)" }}<br>
         対象: {{ page.target }}<br>
-        募集終了日: {{ page.entry_end_date }}<br>
+        募集終了日: {{ page.entry_end_date | date: "%Y/%m/%d(%a)" }}<br>
       </div>
 
       <div class="entry-btn">
