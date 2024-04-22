@@ -35,3 +35,13 @@
 .entry-btn .btn-shadow:hover {
     box-shadow: 1px 3px 7px 0 rgba(25, 181, 193, .5);
 }
+
+.sponsor-event-image {
+    padding: 25px 30px;
+}
+
+.sponsor-event-image img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
