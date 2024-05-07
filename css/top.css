@@ -358,19 +358,19 @@
 }
 
 /* --------------------------
- * 会場提供
+ * 後援・会場提供
  *---------------------------*/
 
-.section-venue .section-title {
+.section-support .section-title {
   margin-top: 100px;
 }
 
-.venue-card {
+.support-card {
   margin: 0 auto;
   width: 350px;
 }
 
-.venue-card .sponsor-picture.picture-small {
+.support-card .sponsor-picture.picture-small {
   padding: 35px 40px;
 }
 
