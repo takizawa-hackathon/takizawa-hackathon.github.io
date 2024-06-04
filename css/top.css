@@ -391,6 +391,62 @@
   margin: 30px 0;
 }
 
+/* ------------------
+ * タイムテーブル
+ * ------------------*/
+
+.timetable-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+}
+
+.timetable-section-subtitle {
+  margin: 20px 0;
+}
+
+.timetable-section-subtitle h2 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.timetable-list {
+  width: 80%;
+}
+
+.timetable-list > li {
+  list-style-type: none;
+  border-radius: 4px;
+  border: 1px solid #F5F5F5;
+  background: #F9F9F9;
+  position: relative;
+  padding: 10px 15px;
+  margin: 16px 0;
+}
+
+.timetable-list > li dl {
+  display: flex;
+  align-items: center;
+  border: 1px solid #F5F5F5;
+  margin: 0;
+  gap: 20px;
+}
+
+.timetable-list > li dl dt {
+  padding: 5px 10px;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #4F4F4F;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+
+.timetable-list > li dl dd {
+  margin: 0;
+  width: calc(100% - 20px);
+}
+
 
 /* ------------------
  * エントリー
