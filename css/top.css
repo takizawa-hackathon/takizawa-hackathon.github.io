@@ -449,6 +449,47 @@
 
 
 /* ------------------
+ * スライドショー
+ * ------------------*/
+ .slideshow-container {
+  display: flex;
+  width: 100vw;
+  height: 300px;
+  overflow: hidden;
+ }
+
+.slideshow-container img {
+  width: auto;
+  height: 100%;
+}
+
+@keyframes slideshow-loop {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slideshow-loop-2 {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+.slideshow-container img:first-child {
+  animation: slideshow-loop 100s -50s linear infinite;
+}
+
+.slideshow-container img:last-child {
+  animation: slideshow-loop-2 100s linear infinite;
+}
+
+/* ------------------
  * エントリー
  * ------------------*/
 
@@ -686,6 +727,10 @@ ul#countdown li .label {
 
   .engineer-card .profile {
     margin: 0;
+  }
+
+  .slideshow-container {
+    height: 500px;
   }
 
   ul#countdown {
