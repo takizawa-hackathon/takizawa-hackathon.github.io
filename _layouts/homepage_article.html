@@ -15,6 +15,10 @@
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
   <meta property="og:image" content="{{ site.url }}/img/og_image.png" />
   <meta property="og:site_name" content="Takizawa Hackathon" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{% if page.pagetitle %}{{ page.pagetitle }}{% else %}{{ page.title }}{% endif %} | {{ site.title }}" />
+  <meta name="twitter:description" content="Takizawa Hackathonは岩手の学生が主役のハッカソンコミュニティです。" />
+  <meta name="twitter:image" content="{{ site.url }}/img/og_image.png" />
 
   <!-- favicon -->
   <link href="/favicons/favicon.ico" rel=icon>
