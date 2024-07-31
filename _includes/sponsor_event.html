@@ -3,24 +3,37 @@
     <div class="row">
       <div class="section-titles">
         <h3>{{ page.event_name }}</h3>
-        <p class="sub-title">{{ page.author }}様主催</p>
+        <p class="sub-title">
+          {% if page.author %} {{ page.author }}様主催 {% elseif page.sponsored
+          %} {{ page.author }}様協賛 {% endif %}
+        </p>
       </div>
 
       <div class="col-md-6 sponsor-event-image">
         <picture>
-          <img src="{{ page.event_image_url }}" alt="sponsor image">
+          <img src="{{ page.event_image_url }}" alt="sponsor image" />
         </picture>
       </div>
       <div class="col-md-6">
         <div class="simple-list">
-          開催日: {{ page.event_date | date: "%Y/%m/%d(%a)" }}<br>
-          対象: {{ page.target }}<br>
-          募集終了日: {{ page.entry_end_date | date: "%Y/%m/%d(%a)" }}<br>
+          開催日: {{ page.event_date | date: "%Y/%m/%d(%a)" }}<br />
+          対象: {{ page.target }}<br />
+          募集終了日: {{ page.entry_end_date | date: "%Y/%m/%d(%a)" }}<br />
         </div>
 
+        {% if page.sponsored %}
+        <a href="{{ page.member_x }}" target="_blank" class="at-user__sns-item">
+          <img src="/img/logo_x.png" class="at-user__sns-item_x" />
+        </a>
+        {% endif %}
+
         <div class="entry-btn">
-          <a href="{{ page.form_url }}" class="btn btn-default btn-shadow wf-notosansjapanese"
-            target="_blank">参加申し込みをする</a>
+          <a
+            href="{{ page.form_url }}"
+            class="btn btn-default btn-shadow wf-notosansjapanese"
+            target="_blank"
+            >参加申し込みをする</a
+          >
         </div>
       </div>
     </div>
