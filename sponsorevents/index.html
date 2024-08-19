@@ -9,13 +9,28 @@ custom_css: "/css/sponsorevents.css"
   <section id="fitst-message" class="first-message">
     <div class="container simple-page-wrapper">
       <div class="row">
-        <p><strong>Takizawa Hackathon</strong>開催日付近のスポンサー企業様が主催されているイベントの一覧です。
-        </p>
+        <p><strong>Takizawa Hackathon</strong>開催日付近にスポンサー企業様が主催または協賛しているイベントの一覧です。</p>
       </div>
     </div>
   </section>
 
-  {% for sponsor_event in site.sponsor_events %}
-    {{ sponsor_event.content }}
-  {% endfor %}
+  <section id="event-section" class="event-section">
+    <div class="container simple-page-wrapper">
+      <div class="row">
+        {% assign visible_events = site.sponsor_events | filter_past_events %}
+        
+        {% if visible_events.size > 0 %}
+          {% for sponsor_event in visible_events %}
+            <div class="col-md-12">
+              {{ sponsor_event.content }}
+            </div>
+          {% endfor %}
+        {% else %}
+          <div class="col-md-12">
+            <p>現在予定されているスポンサーイベントはありません。</p>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </section>
 </article>
