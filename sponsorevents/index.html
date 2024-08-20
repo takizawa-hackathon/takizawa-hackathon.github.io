@@ -15,22 +15,10 @@ custom_css: "/css/sponsorevents.css"
   </section>
 
   <section id="event-section" class="event-section">
-    <div class="container simple-page-wrapper">
-      <div class="row">
-        {% assign visible_events = site.sponsor_events | filter_past_events %}
-        
-        {% if visible_events.size > 0 %}
-          {% for sponsor_event in visible_events %}
-            <div class="col-md-12">
-              {{ sponsor_event.content }}
-            </div>
-          {% endfor %}
-        {% else %}
-          <div class="col-md-12">
-            <p>現在予定されているスポンサーイベントはありません。</p>
-          </div>
-        {% endif %}
-      </div>
+    <div class="container simple-page-wrapper" id="event-container">
+      {% for sponsor_event in site.sponsor_events %}
+        {{ sponsor_event.content }}
+      {% endfor %}
     </div>
   </section>
 </article>
