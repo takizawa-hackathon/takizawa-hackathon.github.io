@@ -795,8 +795,8 @@ ul#countdown li .label {
   }
 
   .news-banner .close-btn {
-    top: -5px;
-    right: -6px;
+    top: -6px;
+    right: -5px;
     width: 25px;
     height: 25px;
     font-size: 20px;
@@ -839,6 +839,15 @@ ul#countdown li .label {
     font-size: 18px;
     font-weight: 300;
     line-height: 2.6em;
+  }
+
+  .news-banner .close-btn {
+    top: -7px;
+    right: -6px;
+    width: 28px;
+    height: 28px;
+    font-size: 22px;
+    line-height: 24px;
   }
 }
 
