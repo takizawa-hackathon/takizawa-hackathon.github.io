@@ -680,6 +680,57 @@ ul#countdown li .label {
   margin: 30px 0;
 }
 
+/* ---------------------------
+ * バナー表示（画面右下）
+ * --------------------------- */
+ .news-banner {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 320px;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 20px 0px, rgba(0, 0, 0, 0.04) 0px 56px 52px 32px;
+  border-radius: 30px;
+  animation: bannerFadeIn 0.5s ease 1s 1 normal backwards;
+  z-index: 999;
+}
+
+.news-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.news-banner .close-btn {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.news-banner .close-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@keyframes bannerFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 /* --------------------------------------------- */
 /* ▼iPhone6相当 (やや高解像度スマホに共通のデザイン) */
@@ -735,6 +786,21 @@ ul#countdown li .label {
 
   ul#countdown {
     width: 60%;
+  }
+
+  .news-banner {
+    bottom: 20px;
+    right: 25px;
+    width: 400px;
+  }
+
+  .news-banner .close-btn {
+    top: -5px;
+    right: -6px;
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    line-height: 22px;
   }
 }
 
@@ -795,6 +861,12 @@ ul#countdown li .label {
   .entry-section-title h4 {
     margin-top: 20px;
   }
+
+  .news-banner {
+    bottom: 25px;
+    right: 30px;
+    width: 450px;
+  }
 }
 
 /* ------------------------------------ */
@@ -807,5 +879,11 @@ ul#countdown li .label {
 
   ul#countdown li .label {
     font-size: 19px;
+  }
+
+  .news-banner {
+    bottom: 28px;
+    right: 32px;
+    width: 500px;
   }
 }
