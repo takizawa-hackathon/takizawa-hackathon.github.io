@@ -1,30 +1,31 @@
-<div class="row" data-show-until="{{ page.data_show_until }}">
-  <div class="section-titles">
-    <h3>{{ page.event_name }}</h3>
-    <p class="sub-title">
-      {% if page.author %}
-      {{ page.author }}様主催
-      {% elsif page.sponsored %}
-      {{ page.sponsored }}様協賛
-      {% endif %}
-    </p>
-  </div>
-
-  <div class="col-md-6 sponsor-event-image">
-    <picture>
-      <img src="{{ page.event_image_url }}" alt="sponsor image" />
-    </picture>
-  </div>
-  <div class="col-md-6">
-    <div class="simple-list">
-      開催日: {{ page.event_date | date: "%Y/%m/%d(%a)" }}<br />
-      対象: {{ page.target }}<br />
-      募集終了日: {{ page.entry_end_date | date: "%Y/%m/%d(%a)" }}<br />
+<div class="row">
+  <div class="col-md-12 hideable-element" data-show-until="{{ page.data_show_until }}">
+    <div class="section-titles">
+      <h3>{{ page.event_name }}</h3>
+      <p class="sub-title">
+        {% if page.author %}
+          {{ page.author }}様主催
+        {% elsif page.sponsored %}
+          {{ page.sponsored }}様協賛
+        {% endif %}
+      </p>
     </div>
-
-    <div class="entry-btn">
-      <a href="{{ page.form_url }}" class="btn btn-default btn-shadow wf-notosansjapanese"
-        target="_blank">{{ page.action_button_label | default: "参加申し込みをする" }}</a>
+    <div class="col-md-6 sponsor-event-image">
+      <picture>
+        <img src="{{ page.event_image_url }}" alt="sponsor image" />
+      </picture>
+    </div>
+    <div class="col-md-6">
+      <div class="simple-list">
+        開催日: {{ page.event_date | date: "%Y/%m/%d(%a)" }}<br />
+        対象: {{ page.target }}<br />
+        募集終了日: {{ page.entry_end_date | date: "%Y/%m/%d(%a)" }}<br />
+      </div>
+      <div class="entry-btn">
+        <a href="{{ page.form_url }}" class="btn btn-default btn-shadow wf-notosansjapanese" target="_blank">
+          {{ page.action_button_label | default: "参加申し込みをする" }}
+        </a>
+      </div>
     </div>
   </div>
 </div>
