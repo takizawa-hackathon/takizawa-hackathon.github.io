@@ -118,3 +118,7 @@ jQuery(function ($) {
         $('#copyright-year').text(new Date().getFullYear());
     }());
 }); // JQuery end
+
+document.getElementById('news-banner-close-btn').addEventListener('click', () => {
+    document.getElementById('news-banner').style.display = 'none';
+});
