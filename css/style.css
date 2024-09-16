@@ -442,6 +442,7 @@ button:focus, .btn:focus, .btn:active:focus {
     width: 235px;
     height: 31px;
     margin: 10px 0 16px 6px;
+    /* TODO: ver.7のものができたら差し替え */
     background-image: url(../img/event-date-ver6.svg);
     background-size: 100%;
     background-repeat: no-repeat;
