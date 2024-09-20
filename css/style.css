@@ -439,10 +439,10 @@ button:focus, .btn:focus, .btn:active:focus {
 }
 
 .orig-jumbotron .content .event-date {
-    width: 235px;
-    height: 31px;
+    width: 300px;
+    height: 28px;
     margin: 10px 0 16px 6px;
-    background-image: url(../img/event-date-ver6.svg);
+    background-image: url(../img/event-date-ver7.svg);
     background-size: 100%;
     background-repeat: no-repeat;
 }
