@@ -428,7 +428,6 @@
 .timetable-list > li dl {
   display: flex;
   align-items: center;
-  border: 1px solid #F5F5F5;
   margin: 0;
   gap: 20px;
 }
@@ -439,12 +438,23 @@
   font-weight: 700;
   color: #4F4F4F;
   background-color: #FFFFFF;
+  border: 1px solid #F5F5F5;
   border-radius: 5px;
 }
 
 .timetable-list > li dl dd {
   margin: 0;
   width: calc(100% - 20px);
+}
+
+.timetable-list-dd-br {
+  display: block;
+  content: "";
+  padding: 10px 0 0 0;
+}
+
+.timetable-list-dd-notes {
+  font-size: 14px;
 }
 
 
