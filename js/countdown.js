@@ -4,7 +4,7 @@ $(function() {
    * GLOBAL VARS
    * -------------------------- */
   // The date you want to count down to
-  var targetDate = new Date("2025/2/28 23:59:59");
+  var targetDate = new Date("2025/21 23:59:59");
 
   // Other date related variables
   var days;
