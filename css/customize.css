@@ -60,8 +60,8 @@
     vertical-align: 2%;
   }
   .orig-jumbotron .content .event-date {
-    width: 400px;
-    height: 110px;
+    width: 380px;
+    height: 39px;
   }
   .orig-jumbotron .content-one {
     top: 50%;
@@ -113,8 +113,8 @@
     font-size: 80px;
   }
   .orig-jumbotron .content .event-date {
-    width: 460px;
-    height: 120px;
+    width: 420px;
+    height: 43px;
     margin: 10px 0 16px 2px;
   }
 }
