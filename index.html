@@ -1,4 +1,10 @@
 ---
+enabled_sponsor: false
+event_day: 2025/9/27-28
+event_place: 近日公開予定！
+event_place_url:
+form_deadline: 2025年8月29日(金)
+form_url: https://forms.gle/RsSjwDmgCS8H2MKN6
 ---
 
 <!DOCTYPE html>
@@ -16,11 +22,13 @@
   <meta property="og:description" content="Takizawa Hackathonは岩手の学生が主役のハッカソンコミュニティです。" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://takizawa-hackathon.com/" />
+  <!-- TODO: 修正が必要な箇所 -->
   <meta property="og:image" content="https://takizawa-hackathon.com/img/og_image_ver7_20250120.png" />
   <meta property="og:site_name" content="Takizawa Hackathon" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Takizawa Hackathon // 滝沢市のハッカソンコミュニティ" />
   <meta name="twitter:description" content="Takizawa Hackathonは岩手の学生が主役のハッカソンコミュニティです。" />
+  <!-- TODO: 修正が必要な箇所 -->
   <meta name="twitter:image" content="https://takizawa-hackathon.com/img/og_image_ver7_20250120.png" />
 
   <!-- favicon -->
@@ -123,7 +131,7 @@
             </li>
           </ul>
         </nav>
-        <a id="entry-btn-top" href="https://forms.gle/RsSjwDmgCS8H2MKN6"
+        <a id="entry-btn-top" href="{{ page.form_url }}"
           class="btn btn-default btn-shadow wf-notosansjapanese" target="_blank">参加申し込みをする</a>
         <div class="sponsor-link">
           <a href="/sponsorevents/">スポンサーイベント一覧</a>
@@ -140,29 +148,40 @@
               <strong>Takizawa Hackathon</strong>は、岩手県の学生が集い、仲間と楽しみながらワクワクするような新しいものを生みだすハッカソンコミュニティです。
             </p>
             <p class="lead">
-              <b>Ver.8のテーマは、〇〇です！</b><br>
-              TODO(ver8): テーマを記載する
+              <b>Ver.8のテーマは、「地域と人がゆるやかにつながる仕組みをつくる」！</b><br>
+              あなたは、かつて訪れた場所や、何かのきっかけで関わった町を、また思い出すことはありますか？
+              その町の人や風景が、ふと心に残っていることはありませんか？
+              今回の滝沢ハッカソンでは、「一度滝沢と関わった人が、心地よくつながり続けられる仕組み」をテーマに、地域と人との“ゆるやかな関係”をつくるアイデアを考え、カタチにします。<br>
+              たとえば──<br>
+              ・観光などで滝沢に立ち寄った人が、「また来たい」と思えるような体験や仕組み<br>
+              ・かつて滝沢に住んでいた人が、遠くからでも関わり続けられる、関わりを深められる場やきっかけ<br>
+              ・滝沢に移住してきたばかりの人が、地域とのつながりが増える場づくり<br>
+              ・副業やリモートワークで関わる都市部の人と、持続的につながる仕掛け<br>
+              一度滝沢と関わりを持ったことのある人が、また関わりたくなる、そんな“ゆるやかで心地よいつながり”をどう生み出すか？<br>
+              とくに、地域外から多様な形で関わり、地域づくりに貢献する“関係人口”の広がりは、今多くの地域で注目されています。<br>
+              <span class="caption">※関係人口とは…移住して住民になる「定住人口」でもなく、単発の旅行者として訪れる「交流人口」でもない立場で、地域と継続的・多様な形で関わり、地域づくりに貢献する人々を指します。</span>
             </p>
             <p class="lead">
-              TODO(ver8): のテーマを記載する
+              滝沢により多様なカタチで関われる仕組みを考え、テクノロジーを用いて実現するワクワクする二日間を過ごしましょう！
             </p>
           </div>
           <div class="col-md-4 about-event-info">
             <address>
               <strong>Takizawa Hackathon Ver.8</strong><br>
-              日時：2025/9/27-28<br>
-              場所：近日公開予定！
-              <!-- TODO(ver8) -->
+              日時：{{ page.event_day }}<br>
+              場所：{{ page.event_place }}
+              {% if page.event_place_url %}
               <div class="google-map-button">
-                <a class="google-map-link" href="https://maps.app.goo.gl/jPod1wPWeQu8bBJq8"><i class="fa fa-map-marker"
+                <a class="google-map-link" href="{{ page.event_place_url }}"><i class="fa fa-map-marker"
                     aria-hidden="true"></i>Google Map</a>
               </div>
+              {% endif %}
               <br>
               参加資格：岩手県内の学生<br>
               参加費：無料<br>
               運営元：滝沢ハッカソン運営委員会
               <br><br>
-              <strong>エントリー締め切り：<br>2025年8月29日(金)<br></strong><br>
+              <strong>エントリー締め切り：<br>{{ page.form_deadline }}<br></strong><br>
             </address>
           </div>
         </div>
@@ -270,11 +289,10 @@
         </div>
       </div>
     </section>
+
+    {% if page.enabled_sponsor %}
     <!-- section-team-position -->
-
-    <!-- TODO(ver8): Sponsor -->
-
-    <!-- <section id="section-sponsors-position" class="section-wrapper client-logo gray-bg">
+    <section id="section-sponsors-position" class="section-wrapper client-logo gray-bg">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -326,9 +344,9 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
     <!-- section-sponsors-position -->
-
+    {% endif %}
 
     <section id="section-timetable" class="section-wrapper">
       <div class="container">
@@ -499,7 +517,7 @@
                 <p>
                   新たな仲間との出会いが生まれ、<br>
                   ワクワクするプロダクトが誕生することを願い、<br>
-                  2025年、7回目となる滝沢ハッカソンを開催いたします。</p>
+                  2025年、8回目となる滝沢ハッカソンを開催いたします。</p>
               </div>
               <br><br>
               <h4>締め切りまであと</h4>
@@ -525,9 +543,9 @@
               </ul>
             </div>
             <div class="entry-btn-wrap">
-              <p><strong>エントリー締め切り<br><del>2025年2月21日(金)</del><br> <font color="red">2025年3月7日(金) 23:59 UTC+09</font></strong></p>
+              <p><strong>エントリー締め切り<br>{{ page.form_deadline }}</strong></p>
               <div class="entry-btn center-block">
-                <a href="https://forms.gle/RsSjwDmgCS8H2MKN6" class="btn btn-default btn-shadow wf-notosansjapanese"
+                <a href="{{ page.form_url }}" class="btn btn-default btn-shadow wf-notosansjapanese"
                   target="_blank">参加申し込みをする</a>
               </div>
             </div>
