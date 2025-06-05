@@ -294,6 +294,12 @@
   position: relative;
 }
 
+.caption {
+  font-size: 0.8em;
+  color: #737373;
+  font-weight: 300;
+  line-height: 0.2em;
+}
 
 /* --------------------------
  * スポンサー／会場提供
