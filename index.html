@@ -4,6 +4,7 @@ event_day: 2025/9/27-28
 event_place: 滝沢市IPU第2イノベーションセンター
 event_place_url:
 form_deadline: 2025年8月29日(金)
+postponement_form_deadline: 2025年9月12日(金)
 form_url: https://forms.gle/SSq3GH4rhAKtUj3r8
 ---
 
@@ -179,7 +180,11 @@ form_url: https://forms.gle/SSq3GH4rhAKtUj3r8
               参加費：無料<br>
               運営元：滝沢ハッカソン運営委員会
               <br><br>
+              {% if page.postponement_form_deadline %}
+              <strong>エントリー締め切り：<br><del>{{ page.form_deadline }}</del></strong><br><font color="red">{{ page.postponement_form_deadline }}</font></strong><br>
+              {% else %}
               <strong>エントリー締め切り：<br>{{ page.form_deadline }}<br></strong><br>
+              {% endif %}
             </address>
           </div>
         </div>
@@ -541,7 +546,11 @@ form_url: https://forms.gle/SSq3GH4rhAKtUj3r8
               </ul>
             </div>
             <div class="entry-btn-wrap">
+              {% if page.postponement_form_deadline %}
+              <p><strong>エントリー締め切り<br><del>{{ page.form_deadline }}</del><br> <font color="red">{{ page.postponement_form_deadline }}</font></strong></p>
+              {% else %}
               <p><strong>エントリー締め切り<br>{{ page.form_deadline }}</strong></p>
+              {% endif %}
               <div class="entry-btn center-block">
                 <a href="{{ page.form_url }}" class="btn btn-default btn-shadow wf-notosansjapanese"
                   target="_blank">参加申し込みをする</a>
