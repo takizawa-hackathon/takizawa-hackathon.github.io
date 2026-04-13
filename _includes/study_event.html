@@ -1,0 +1,35 @@
+<div class="study-event-card">
+  <div class="study-event-status study-event-status--{{ page.status }}">
+    {% if page.status == "upcoming" %}
+      開催予定
+    {% elsif page.status == "open" %}
+      申込受付中
+    {% elsif page.status == "closed" %}
+      受付終了
+    {% elsif page.status == "finished" %}
+      開催済み
+    {% endif %}
+  </div>
+  <h3 class="study-event-title">{{ page.event_name }}</h3>
+  <p class="study-event-description">{{ page.event_description }}</p>
+  <div class="study-event-details">
+    <ul>
+      {% if page.event_date %}
+      <li><i class="fa fa-calendar" aria-hidden="true"></i> {{ page.event_date | date: "%Y年%m月%d日" }}{% if page.event_time %}　{{ page.event_time }}{% endif %}</li>
+      {% endif %}
+      <li><i class="fa fa-map-marker" aria-hidden="true"></i> {{ page.event_place }}</li>
+      <li><i class="fa fa-users" aria-hidden="true"></i> 対象: {{ page.target }}</li>
+      <li><i class="fa fa-user" aria-hidden="true"></i> 定員: {{ page.capacity }}</li>
+      {% if page.entry_end_date %}
+      <li><i class="fa fa-clock-o" aria-hidden="true"></i> 申込締切: {{ page.entry_end_date | date: "%Y年%m月%d日" }}</li>
+      {% endif %}
+    </ul>
+  </div>
+  {% if page.status == "open" and page.form_url != "" and page.form_url != "#" %}
+  <div class="study-event-action">
+    <a href="{{ page.form_url }}" class="btn btn-default btn-shadow wf-notosansjapanese" target="_blank" rel="noopener noreferrer">
+      参加申し込みをする
+    </a>
+  </div>
+  {% endif %}
+</div>
