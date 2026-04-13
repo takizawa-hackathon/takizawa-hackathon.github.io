@@ -1,0 +1,379 @@
+/* --------------------------------------------- */
+/* 勉強会ページ スタイル                           */
+/* --------------------------------------------- */
+
+/* 概要セクション */
+.study-about {
+  margin: 0 0 48px 0;
+}
+
+.study-about-content {
+  margin: 40px 0 0 0;
+  padding: 0 2rem;
+}
+
+.study-about-points {
+  margin: 30px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.study-about-points li {
+  position: relative;
+  padding: 12px 0 12px 50px;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95em;
+  line-height: 1.6em;
+}
+
+.study-about-points li:last-child {
+  border-bottom: none;
+}
+
+.study-about-points li .fa {
+  position: absolute;
+  left: 12px;
+  top: 14px;
+  font-size: 1.4em;
+  color: #28c88c;
+}
+
+/* イベントカード */
+.study-event-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 30px;
+  margin: 0 0 30px 0;
+  transition: box-shadow 0.2s ease;
+}
+
+.study-event-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.study-event-status {
+  display: inline-block;
+  padding: 3px 14px;
+  border-radius: 3px;
+  font-size: 0.75em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 0 12px 0;
+}
+
+.study-event-status--upcoming,
+.study-event-status--open {
+  background: linear-gradient(90deg, #19b5c1, #28c88c);
+  color: #fff;
+}
+
+.study-event-status--closed {
+  background: #999;
+  color: #fff;
+}
+
+.study-event-status--finished {
+  background: #ddd;
+  color: #666;
+}
+
+.study-event-title {
+  margin: 0 0 12px 0 !important;
+  padding: 0 !important;
+  font-size: 1.4em !important;
+  font-weight: 700;
+  text-transform: none !important;
+}
+
+.study-event-description {
+  margin: 0 0 20px 0 !important;
+  padding: 0 !important;
+  font-size: 0.95em;
+  color: #666;
+  line-height: 1.7em;
+}
+
+.study-event-details {
+  margin: 0 0 20px 0;
+}
+
+.study-event-details ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.study-event-details ul li {
+  padding: 6px 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.study-event-details ul li .fa {
+  width: 20px;
+  text-align: center;
+  margin-right: 8px;
+  color: #28c88c;
+}
+
+.study-event-action {
+  margin: 20px 0 0 0;
+}
+
+.study-event-action .btn {
+  background: #19b5c1;
+  background: linear-gradient(90deg, #19b5c1, #28c88c);
+  border-color: transparent;
+  border-radius: 4px;
+  transition: all 0.15s ease-in-out;
+  text-align: center;
+  padding: 10px 30px;
+  color: #fff;
+}
+
+.study-event-action .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 6px 0 rgba(25, 181, 193, 0.5);
+}
+
+.study-event-action .btn-shadow {
+  box-shadow: 0 2px 6px 0 rgba(25, 181, 193, 0.5);
+}
+
+/* イベント一覧セクション */
+.study-events-section {
+  margin: 0 0 48px 0;
+}
+
+.study-events-list {
+  margin: 30px 0 0 0;
+}
+
+/* 過去イベントは少し薄く */
+.study-events-past .study-event-card {
+  opacity: 0.7;
+}
+
+.study-events-past .study-event-card:hover {
+  opacity: 1;
+}
+
+/* 参加方法セクション */
+.study-how-to {
+  margin: 0 0 80px 0;
+}
+
+.study-steps {
+  margin: 30px 0 0 0;
+  padding: 0 2rem;
+  counter-reset: step-counter;
+  list-style: none;
+}
+
+.study-steps li {
+  position: relative;
+  padding: 15px 0 15px 50px;
+  margin: 0 0 10px 0;
+  font-size: 0.95em;
+  line-height: 1.6em;
+}
+
+.study-steps li:before {
+  content: counter(step-counter);
+  counter-increment: step-counter;
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #19b5c1, #28c88c);
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  font-size: 0.85em;
+  font-weight: 700;
+}
+
+/* トップページ 勉強会バナー */
+.study-banner-section {
+  padding: 60px 0;
+  background: linear-gradient(135deg, #f8fffe 0%, #f0faf6 100%);
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.study-banner-content {
+  text-align: center;
+}
+
+.study-banner-content h2 {
+  font-size: 1.6em;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 10px 0;
+}
+
+.study-banner-content .study-banner-subtitle {
+  font-size: 0.95em;
+  color: #666;
+  margin: 0 0 25px 0;
+}
+
+.study-banner-content .btn-study {
+  background: linear-gradient(90deg, #19b5c1, #28c88c);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 36px;
+  font-size: 1em;
+  transition: all 0.15s ease-in-out;
+  box-shadow: 0 2px 6px 0 rgba(25, 181, 193, 0.5);
+}
+
+.study-banner-content .btn-study:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px 0 rgba(25, 181, 193, 0.5);
+  text-decoration: none;
+  color: #fff;
+}
+
+/* カリキュラムセクション */
+.study-curriculum {
+  margin: 0 0 48px 0;
+}
+
+.study-curriculum-content {
+  margin: 30px 0 0 0;
+  padding: 0 2rem;
+}
+
+.study-curriculum-event-title {
+  font-size: 1.3em !important;
+  font-weight: 700 !important;
+  color: #333 !important;
+  margin: 0 0 15px 0 !important;
+  padding: 0 !important;
+}
+
+.study-curriculum-goal {
+  font-size: 0.95em !important;
+  color: #555 !important;
+  line-height: 1.7em !important;
+  margin: 0 0 30px 0 !important;
+  padding: 0 !important;
+}
+
+/* スケジュールブロック */
+.study-schedule {
+  margin: 0 0 30px 0;
+}
+
+.study-schedule-block {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 0 20px 0;
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 6px;
+}
+
+.study-schedule-label {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 3px;
+  font-size: 0.8em;
+  font-weight: 700;
+  color: #fff;
+  white-space: nowrap;
+  margin-right: 20px;
+  min-width: 100px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.study-schedule-label--am {
+  background: #e8953a;
+}
+
+.study-schedule-label--pm {
+  background: #19b5c1;
+}
+
+.study-schedule-detail ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.study-schedule-detail ul li {
+  padding: 4px 0;
+  font-size: 0.9em;
+  color: #555;
+  line-height: 1.6em;
+}
+
+.study-schedule-detail ul li:before {
+  content: '・';
+  color: #999;
+}
+
+/* 事前準備・学べること */
+.study-preparation,
+.study-learn {
+  margin: 0 0 25px 0;
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 6px;
+}
+
+.study-preparation h4,
+.study-learn h4 {
+  font-size: 1em !important;
+  font-weight: 700 !important;
+  color: #333 !important;
+  margin: 0 0 12px 0 !important;
+  padding: 0 !important;
+}
+
+.study-preparation ul,
+.study-learn ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.study-preparation ul li,
+.study-learn ul li {
+  padding: 5px 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.study-preparation ul li .fa,
+.study-learn ul li .fa {
+  color: #28c88c;
+  margin-right: 8px;
+  width: 16px;
+  text-align: center;
+}
+
+/* レスポンシブ: スケジュールブロック */
+@media all and (max-width: 480px) {
+  .study-schedule-block {
+    flex-direction: column;
+  }
+
+  .study-schedule-label {
+    margin: 0 0 12px 0;
+  }
+}
+
+/* 勉強会ページ内のセクション区切り */
+.study-section-divider {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 50px 2rem;
+}

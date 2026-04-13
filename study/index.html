@@ -1,0 +1,188 @@
+---
+layout: homepage_article
+title: Study Sessions
+article_subtitle: 勉強会
+custom_css: "/css/study.css"
+---
+
+<article class="simple-page-main-section">
+  <section id="study-about" class="study-about">
+    <div class="container simple-page-wrapper">
+      <div class="row">
+        <div class="section-titles">
+          <h3>About Study Sessions</h3>
+          <p class="sub-title">勉強会について</p>
+        </div>
+
+        <div class="study-about-content">
+          <p>
+            <strong>Takizawa Hackathon</strong>では、ハッカソンだけでなく勉強会も開催しています。
+            AIやWeb開発など、ものづくりに役立つスキルを仲間と一緒にハンズオン形式で学べる場です。
+            開発経験がなくても大丈夫。気軽にご参加ください。
+          </p>
+
+          <ul class="study-about-points">
+            <li>
+              <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+              初心者歓迎 - 開発経験がなくても安心して参加できます
+            </li>
+            <li>
+              <i class="fa fa-laptop" aria-hidden="true"></i>
+              ハンズオン形式 - 座学と実習で手を動かしながら実践的に学びます
+            </li>
+            <li>
+              <i class="fa fa-users" aria-hidden="true"></i>
+              仲間づくり - 同じ志を持つ岩手の学生とつながれます
+            </li>
+            <li>
+              <i class="fa fa-rocket" aria-hidden="true"></i>
+              ハッカソン準備 - 学んだスキルをハッカソンで活かせます
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- .study-about -->
+
+  <hr class="study-section-divider">
+
+  <section id="study-upcoming" class="study-events-section">
+    <div class="container simple-page-wrapper">
+      <div class="row">
+        <div class="section-titles">
+          <h3>Upcoming Events</h3>
+          <p class="sub-title">開催予定の勉強会</p>
+        </div>
+
+        <div class="study-events-list">
+          {% assign upcoming_events = site.study_events | where: "status", "upcoming" %}
+          {% assign open_events = site.study_events | where: "status", "open" %}
+          {% assign active_events = upcoming_events | concat: open_events | sort: "event_date" %}
+
+          {% if active_events.size > 0 %}
+            {% for study_event in active_events %}
+              {{ study_event.content }}
+            {% endfor %}
+          {% else %}
+            <p>現在、開催予定の勉強会はありません。決まり次第こちらでお知らせします。</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- .study-upcoming -->
+
+  <hr class="study-section-divider">
+
+  <section id="study-curriculum" class="study-curriculum">
+    <div class="container simple-page-wrapper">
+      <div class="row">
+        <div class="section-titles">
+          <h3>Curriculum</h3>
+          <p class="sub-title">勉強会の内容</p>
+        </div>
+
+        <div class="study-curriculum-content">
+          <h4 class="study-curriculum-event-title">Gemini APIでAIプロダクトを作ろう</h4>
+          <p class="study-curriculum-goal">
+            Google AI Studioでプロンプトを設計し、AIキャラクターを作る。Gemini APIキーを取得してローカル環境で動かす。ブラウザから「質問→AI返答」が動くWebアプリを完成させる。
+          </p>
+
+          <div class="study-schedule">
+            <div class="study-schedule-block">
+              <span class="study-schedule-label study-schedule-label--am">前半（座学）</span>
+              <div class="study-schedule-detail">
+                <ul>
+                  <li>AIとは？ LLMとGeminiを理解しよう</li>
+                  <li>プロンプト設計：AIキャラクターを作ろう</li>
+                  <li>APIキー：取得方法と「守り方」</li>
+                </ul>
+              </div>
+            </div>
+            <div class="study-schedule-block">
+              <span class="study-schedule-label study-schedule-label--pm">後半（実習）</span>
+              <div class="study-schedule-detail">
+                <ul>
+                  <li>事前準備：環境を整えよう（Docker Desktop / エディタ）</li>
+                  <li>アーキテクチャ：3層構造で動くWebアプリ</li>
+                  <li>server.js の実装：AIの頭脳を作る</li>
+                  <li>index.html の実装：対話画面を作る</li>
+                  <li>起動と動作確認：AIと話してみよう！</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="study-preparation">
+            <h4>事前準備</h4>
+            <ul>
+              <li><i class="fa fa-check" aria-hidden="true"></i> Googleアカウント</li>
+              <li><i class="fa fa-check" aria-hidden="true"></i> VS Code（推奨）</li>
+              <li><i class="fa fa-check" aria-hidden="true"></i> Docker Desktop</li>
+            </ul>
+          </div>
+
+          <div class="study-learn">
+            <h4>学べること</h4>
+            <ul>
+              <li><i class="fa fa-lightbulb-o" aria-hidden="true"></i> プロンプト設計（システム指示）</li>
+              <li><i class="fa fa-lightbulb-o" aria-hidden="true"></i> APIキーの安全な管理</li>
+              <li><i class="fa fa-lightbulb-o" aria-hidden="true"></i> 3層アーキテクチャの実装</li>
+              <li><i class="fa fa-lightbulb-o" aria-hidden="true"></i> レート制限（RPM/TPM）の理解</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- .study-curriculum -->
+
+  <hr class="study-section-divider">
+
+  <section id="study-past" class="study-events-section study-events-past">
+    <div class="container simple-page-wrapper">
+      <div class="row">
+        <div class="section-titles">
+          <h3>Past Events</h3>
+          <p class="sub-title">過去の勉強会</p>
+        </div>
+
+        <div class="study-events-list">
+          {% assign finished_events = site.study_events | where: "status", "finished" %}
+          {% assign closed_events = site.study_events | where: "status", "closed" %}
+          {% assign past_events = finished_events | concat: closed_events | sort: "event_date" | reverse %}
+
+          {% if past_events.size > 0 %}
+            {% for study_event in past_events %}
+              {{ study_event.content }}
+            {% endfor %}
+          {% else %}
+            <p>まだ過去の勉強会はありません。初回の開催をお楽しみに！</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- .study-past -->
+
+  <hr class="study-section-divider">
+
+  <section id="study-how-to" class="study-how-to">
+    <div class="container simple-page-wrapper">
+      <div class="row">
+        <div class="section-titles">
+          <h3>How to Join</h3>
+          <p class="sub-title">参加方法</p>
+        </div>
+
+        <ol class="study-steps" role="list">
+          <li>参加したい勉強会の「参加申し込みをする」ボタンからフォームに回答してください</li>
+          <li>申し込み完了メールが届きます。当日の持ち物や準備事項をご確認ください</li>
+          <li>当日、時間になったらオンラインで参加してください</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+  <!-- .study-how-to -->
+</article>
