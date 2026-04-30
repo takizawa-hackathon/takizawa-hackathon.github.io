@@ -23,6 +23,9 @@
       {% if page.entry_end_date %}
       <li><i class="fa fa-clock-o" aria-hidden="true"></i> 申込締切: {{ page.entry_end_date | date: "%Y年%m月%d日" }}</li>
       {% endif %}
+      {% if page.co_organizer %}
+      <li><i class="fa fa-building" aria-hidden="true"></i> 共催: {{ page.co_organizer }}</li>
+      {% endif %}
     </ul>
   </div>
   {% if page.status == "open" and page.form_url != "" and page.form_url != "#" %}
