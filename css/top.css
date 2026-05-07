@@ -304,8 +304,15 @@
 /* --------------------------
  * スポンサー／会場提供
  *---------------------------*/
+.section-sponsor {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .sponsor-card {
-  margin: 20px 0;
+  width: 350px;
+  margin: 20px;
 }
 
 .sponsor-picture {
