@@ -364,20 +364,33 @@
 }
 
 /* --------------------------
- * 後援・会場提供
+ * 共催
  *---------------------------*/
 
-.section-support .section-title {
+.section-coorganizer .section-title {
   margin-top: 100px;
 }
 
-.support-card {
+.coorganizer-card {
   margin: 0 auto;
   width: 350px;
 }
 
-.support-card .sponsor-picture.picture-small {
-  padding: 35px 40px;
+.sponsor-name-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 15px;
+  height: 140px;
+  background-color: #ffffff;
+}
+
+.sponsor-name-text {
+  font-size: 2.0rem;
+  font-weight: 600;
+  color: #333333;
+  text-align: center;
+  line-height: 1.4;
 }
 
 /* --------------------------
